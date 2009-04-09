@@ -1,0 +1,11 @@
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\bin\Debug\Presentation.exe
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\bin\Debug\Presentation.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\bin\Debug\BUS.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\bin\Debug\DTO.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\bin\Debug\BUS.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\bin\Debug\DTO.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\obj\Debug\ResolveAssemblyReference.cache
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.exe
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.pdb
