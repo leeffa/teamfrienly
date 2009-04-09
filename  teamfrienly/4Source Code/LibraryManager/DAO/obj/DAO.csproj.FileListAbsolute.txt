@@ -1,0 +1,7 @@
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DAO\bin\Debug\DAO.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DAO\bin\Debug\DAO.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DAO\bin\Debug\DTO.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DAO\bin\Debug\DTO.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DAO\obj\Debug\ResolveAssemblyReference.cache
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DAO\obj\Debug\DAO.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DAO\obj\Debug\DAO.pdb

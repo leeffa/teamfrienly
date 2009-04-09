@@ -1,0 +1,9 @@
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\bin\Debug\BUS.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\bin\Debug\BUS.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\bin\Debug\DAO.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\bin\Debug\DTO.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\bin\Debug\DTO.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\bin\Debug\DAO.pdb
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\obj\Debug\BUS.dll
+D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\BUS\obj\Debug\BUS.pdb
