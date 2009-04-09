@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BUS
 {
-    public class LibraryBUS
+    public class TheDocGiaBUS
     {
     }
 }
