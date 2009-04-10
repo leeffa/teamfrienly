@@ -10,14 +10,13 @@ namespace DTO
 
         private int maSach;
         private string tenSach;
-        private int maTheLoai;
+        private int loaiSach;
         private string tacGia;
-        private DateTime namXuatBan;
-        private string nhaXuatBan;
-        private int triGia;
-        private DateTime ngayNhap;
-        private Boolean tinhTrang;
+        private int gia;
         private string ngonNgu;
+        private string nhaXB;
+       // private DateTime namXuatBan;
+
         
         #endregion Attributes
         #region Properties
@@ -32,57 +31,55 @@ namespace DTO
             get { return tenSach; }
             set { tenSach = value; }
         }
-        public int MaTheLoai
+        public int LoaiSach
         {
-            get { return maTheLoai; }
-            set { maTheLoai = value; }
+            get { return loaiSach; }
+            set { loaiSach = value; }
         }
         public string TacGia
         {
             get { return tacGia; }
             set { tacGia = value; }
         }
-        public DateTime NamXuatBan
+        public int Gia
         {
-            get { return namXuatBan; }
-            set { namXuatBan = value; }
-        }
-        public int TriGia 
-        {
-            get { return triGia; }
-            set { triGia = value; }
-        }
-        
-        public DateTime NgayNhap
-        {
-            get { return ngayNhap; }
-            set { ngayNhap = value; }
-        }
-        public Boolean TinhTrang
-        {
-            get { return tinhTrang; }
-            set { tinhTrang = value; }
+            get { return gia; }
+            set { gia = value; }
         }
         public string NgonNgu
         {
             get { return ngonNgu; }
             set { ngonNgu = value; }
         }
+       
+
+        public string NhaXB
+        {
+            get { return nhaXB; }
+            set { nhaXB = value; }
+        }
+       
+       
+        
         #endregion Properties
 
+        private int maSach;
+        private string tenSach;
+        private int loaiSach;
+        private string tacGia;
+        private int gia;
+        private string ngonNgu;
+        private string nhaXB;
         public SachDTO()
         {
             maSach = 0;
             tenSach = "";
-            maTheLoai = 0;
+            loaiSach = 0;
             tacGia = "";
-           
-
-            namXuatBan = new DateTime(1950, 1, 1);
-            triGia = 0;
-            ngayNhap = new DateTime(1950, 1, 1);
-            tinhTrang = false;
+            gia = 0;
             ngonNgu = "";
+            nhaXB = "";
+            
         }
     } 
 }
