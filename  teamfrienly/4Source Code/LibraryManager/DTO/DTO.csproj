@@ -33,6 +33,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PhieuMuonDTO.cs" />
+    <Compile Include="PhieuTraDTO.cs" />
     <Compile Include="SachDTO.cs" />
     <Compile Include="TheDocGiaDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
