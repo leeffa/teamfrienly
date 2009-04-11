@@ -6,7 +6,7 @@ namespace DTO
 {
     class SachDTO
     {
-        #region Attributes
+#region Attributes
 
         private int maSach;
         private string tenSach;
@@ -18,8 +18,8 @@ namespace DTO
        // private DateTime namXuatBan;
 
         
-        #endregion Attributes
-        #region Properties
+#endregion Attributes
+#region Properties
         public int MaSach
         {
             get { return maSach; }
@@ -58,18 +58,15 @@ namespace DTO
             get { return nhaXB; }
             set { nhaXB = value; }
         }
-       
-       
-        
-        #endregion Properties
-
-        private int maSach;
-        private string tenSach;
-        private int loaiSach;
-        private string tacGia;
-        private int gia;
-        private string ngonNgu;
-        private string nhaXB;
+#endregion Properties
+// 
+//         private int maSach;
+//         private string tenSach;
+//         private int loaiSach;
+//         private string tacGia;
+//         private int gia;
+//         private string ngonNgu;
+//         private string nhaXB;
         public SachDTO()
         {
             maSach = 0;

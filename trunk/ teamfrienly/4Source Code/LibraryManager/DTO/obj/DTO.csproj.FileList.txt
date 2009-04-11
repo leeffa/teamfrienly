@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DTO.dll
+obj\Debug\DTO.pdb
+bin\Debug\DTO.dll
+bin\Debug\DTO.pdb

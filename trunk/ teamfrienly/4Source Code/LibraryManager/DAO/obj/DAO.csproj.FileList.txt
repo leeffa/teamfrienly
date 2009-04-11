@@ -1,0 +1,10 @@
+bin\Debug\QLTV.mdf
+bin\Debug\QLTV_log.ldf
+bin\Debug\DAO.dll.config
+bin\Debug\DAO.dll
+bin\Debug\DAO.pdb
+bin\Debug\DTO.dll
+bin\Debug\DTO.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DAO.dll
+obj\Debug\DAO.pdb
