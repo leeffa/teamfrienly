@@ -33,6 +33,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoaiTheBUS.cs" />
+    <Compile Include="SachMuonBUS.cs" />
+    <Compile Include="TheBUS.cs" />
     <Compile Include="TheDocGiaBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
