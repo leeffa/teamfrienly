@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConnectionString>Data Source=sieudang_computer\SQLEXPRESS;Initial Catalog=HRM;Integrated Security=True</ConnectionString>
