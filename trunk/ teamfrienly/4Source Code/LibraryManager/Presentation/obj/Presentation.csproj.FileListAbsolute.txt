@@ -23,3 +23,5 @@ C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Resolv
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.Form1.resources
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.Properties.Resources.resources
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
+C:\Users\thongoc\Desktop\New Folder (2)\Presentation\obj\Debug\Presentation.exe
+C:\Users\thongoc\Desktop\New Folder (2)\Presentation\obj\Debug\Presentation.pdb
