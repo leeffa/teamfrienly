@@ -12,3 +12,10 @@ C:\Users\thongoc\Desktop\New Folder\LibraryManager\DAO\bin\Debug\DTO.pdb
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\DAO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\DAO\obj\Debug\DAO.dll
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\DAO\obj\Debug\DAO.pdb
+C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\DAO\bin\Debug\DAO.dll
+C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\DAO\bin\Debug\DAO.pdb
+C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\DAO\bin\Debug\DTO.dll
+C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\DAO\bin\Debug\DTO.pdb
+C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\DAO\obj\Debug\DAO.dll
+C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\DAO\obj\Debug\DAO.pdb
