@@ -11,3 +11,15 @@ D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Present
 D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.pdb
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.exe
 C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.pdb
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\Presentation.exe
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\Presentation.pdb
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\BUS.dll
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\BUS.pdb
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.Form1.resources
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache

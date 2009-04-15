@@ -3,3 +3,8 @@ D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DTO\bin
 D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DTO\obj\Debug\ResolveAssemblyReference.cache
 D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DTO\obj\Debug\DTO.dll
 D:\Year 3 of 2008_HKII\QLCHPM\@QuanLyThuVien\4Source Code\LibraryManager\DTO\obj\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\DTO\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\DTO\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\DTO\obj\Debug\DTO.dll
+C:\Users\thongoc\Desktop\New Folder\LibraryManager\DTO\obj\Debug\DTO.pdb
