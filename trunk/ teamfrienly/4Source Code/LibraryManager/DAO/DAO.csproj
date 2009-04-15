@@ -46,7 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoaiTheDAO.cs" />
+    <Compile Include="NgonNguDao.cs" />
+    <Compile Include="NhaXBDao.cs" />
+    <Compile Include="PhatDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SachHongDAO.cs" />
+    <Compile Include="SachMatDao.cs" />
+    <Compile Include="SachMuonDAO.cs" />
+    <Compile Include="SqlDataAccessHelper.cs" />
+    <Compile Include="TacGiaDao.cs" />
+    <Compile Include="TheDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
