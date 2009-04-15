@@ -33,7 +33,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoaiTheBUS.cs" />
+    <Compile Include="NgonNguBus.cs" />
+    <Compile Include="NhaXBBus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SachHongBUS.cs" />
+    <Compile Include="SachMatBus.cs" />
+    <Compile Include="SachMuonBUS.cs" />
+    <Compile Include="TacGiaBus.cs" />
+    <Compile Include="TheBUS.cs" />
+    <Compile Include="TheDocGiaBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">
