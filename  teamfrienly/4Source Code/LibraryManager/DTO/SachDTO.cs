@@ -4,14 +4,14 @@ using System.Text;
 
 namespace DTO
 {
-    [Serializable]
-    class SachDTO
+    //[Serializable]
+    public class SachDTO
     {
         #region Attributes
 
-        private int maSach;
-        private string tenSach;
-        private int loaiSach;
+        private string ma;
+        private string ten;
+        private string loaiSach;
         private string tacGia;
         private int gia;
         private string ngonNgu;
@@ -21,18 +21,18 @@ namespace DTO
         
         #endregion Attributes
         #region Properties
-        public int MaSach
+        public string Ma
         {
-            get { return maSach; }
-            set { maSach = value; }
+            get { return ma; }
+            set { ma = value; }
         }
 
-        public string TenSach
+        public string Ten
         {
-            get { return tenSach; }
-            set { tenSach = value; }
+            get { return ten; }
+            set { ten = value; }
         }
-        public int LoaiSach
+        public string LoaiSach
         {
             get { return loaiSach; }
             set { loaiSach = value; }
@@ -67,9 +67,9 @@ namespace DTO
         
         public SachDTO()
         {
-            maSach = 0;
-            tenSach = "";
-            loaiSach = 0;
+            ma = "";
+            ten = "";
+            loaiSach = "";
             tacGia = "";
             gia = 0;
             ngonNgu = "";

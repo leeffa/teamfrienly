@@ -33,11 +33,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DenBuDTO.cs" />
+    <Compile Include="LoaiSachDTO.cs" />
     <Compile Include="LoaiTheDTO.cs" />
+    <Compile Include="MuonSachDTO.cs" />
     <Compile Include="NgonNguDto.cs" />
     <Compile Include="NhaXBDto.cs" />
     <Compile Include="PhatDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SachDTO.cs" />
     <Compile Include="SachHongDTO.cs" />
     <Compile Include="SachMatDto.cs" />
     <Compile Include="SachMuonDTO.cs" />
