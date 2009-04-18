@@ -74,6 +74,8 @@ namespace DAO
           List<LoaiTheDTO> list = new List<LoaiTheDTO>();
           try
           {
+              // Create List Sql Parameter
+
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectLoaiTheAll");
               foreach (DataRow dr in dt.Rows)
               {

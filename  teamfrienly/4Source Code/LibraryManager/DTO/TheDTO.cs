@@ -51,10 +51,10 @@ namespace DTO
         {
             ma = "";
             loaithe = "";
-            ngaycap = new DateTime(0, 0, 0);
-            ngayhethan = new DateTime(0, 0, 0);
+            ngaycap = new DateTime(1, 1, 1);
+            ngayhethan = new DateTime(1, 1, 1);
             ten = "";
-            ngaysinh = new DateTime(0, 0, 0);
+            ngaysinh = new DateTime(1, 1, 1);
 
         }
       
