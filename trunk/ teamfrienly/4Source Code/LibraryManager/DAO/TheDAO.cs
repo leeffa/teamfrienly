@@ -122,9 +122,10 @@ namespace DAO
           }
           return result;
       }
+
       public static TheDTO SelectTheByID(String employeeID)
       {
-         TheDTO emp = new TheDTO();
+          TheDTO emp = new TheDTO();
           try
           {
               // Create List Sql Parameter
@@ -133,9 +134,9 @@ namespace DAO
 
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectTheByID", sqlParams);
               DataRow dr = dt.Rows[0];
-              emp.Ma= dr["Ma"].ToString();
+              emp.Ma = dr["Ma"].ToString();
               emp.LoaiThe = dr["LoaiThe"].ToString();
-              emp.NgayCap = (DateTime) dr["NgayCap"];
+              emp.NgayCap = (DateTime)dr["NgayCap"];
               emp.NgayHetHan = (DateTime)dr["NgayHetHan"];
               emp.TenDocGia = dr["TenDocGia"].ToString();
               emp.NgaySinh = (DateTime)dr["NgaySinh"];
@@ -146,6 +147,36 @@ namespace DAO
           }
           return emp;
       }
+      public static List<TheDTO> SelectTheByLoaiThe(String maloaithe)
+      {
+          List<TheDTO> list = new List<TheDTO>();
 
+          try
+          {
+              // Create List Sql Parameter
+              List<SqlParameter> sqlParams = new List<SqlParameter>();
+              sqlParams.Add(new SqlParameter("@Ma",maloaithe));
+
+              DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectTheByLoaiThe", sqlParams);
+              foreach (DataRow dr in dt.Rows)
+              {
+                  TheDTO the = new TheDTO();
+
+                  the.Ma = dr["Ma"].ToString();
+                  the.LoaiThe = dr["LoaiThe"].ToString();
+                  the.NgayCap = (DateTime)dr["NgayCap"];
+                  the.NgayHetHan = (DateTime)dr["NgayHetHan"];
+                  the.TenDocGia = dr["TenDocGia"].ToString();
+                  the.NgaySinh = (DateTime)dr["NgaySinh"];
+                  list.Add(the);  
+              }
+
+         }
+          catch (Exception ex)
+          {
+              throw ex;
+          }
+          return list;
+      }
     }
 }

@@ -5,7 +5,7 @@ using DTO;
 using DAO;
 namespace BUS
 {
-    class LoaiTheBUS
+    public class LoaiTheBUS
     {
         public static bool InsertLoaiThe(LoaiTheDTO emp)
         {

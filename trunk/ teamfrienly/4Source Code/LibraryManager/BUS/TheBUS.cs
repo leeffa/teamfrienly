@@ -5,7 +5,7 @@ using DAO;
 using DTO;
 namespace BUS
 {
-    class TheBUS
+    public class TheBUS
     {
         public static bool InsertThe(TheDTO emp)
         {
@@ -42,5 +42,10 @@ namespace BUS
         {
             return TheDAO.SelectTheByID(employeeID);
         }
+        public static List<TheDTO> SelectTheByLoaiThe(String maloaithe)
+        {
+            return TheDAO.SelectTheByLoaiThe(maloaithe);
+        }
+ 
     }
 }
