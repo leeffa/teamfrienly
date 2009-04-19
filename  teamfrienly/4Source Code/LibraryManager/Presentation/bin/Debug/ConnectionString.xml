@@ -1,2 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ConnectionString>Data Source=.\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True;</ConnectionString>
+<ConnectionString>Data Source=ntphuclt\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True;</ConnectionString>

@@ -25,3 +25,12 @@ C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\BUS\bi
 C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\BUS\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\BUS\obj\Debug\BUS.dll
 C:\Users\ntphuc\Desktop\checkout\ teamfrienly\4Source Code\LibraryManager\BUS\obj\Debug\BUS.pdb
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\bin\Debug\BUS.dll
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\bin\Debug\BUS.pdb
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\bin\Debug\DAO.dll
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\bin\Debug\DTO.dll
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\bin\Debug\DTO.pdb
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\bin\Debug\DAO.pdb
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\obj\Debug\BUS.dll
+C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\obj\Debug\BUS.pdb

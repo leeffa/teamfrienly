@@ -39,7 +39,7 @@ namespace DAO
               List<SqlParameter> sqlParams = new List<SqlParameter>();
               sqlParams.Add(new SqlParameter("@MaMuonSach", temp.MaMuonSach));
               
-             
+            
               // Call Store Procedure
               int n = SqlDataAccessHelper.ExecuteNoneQuery("spUpdateSachMuon", sqlParams);
               if (n == 1)

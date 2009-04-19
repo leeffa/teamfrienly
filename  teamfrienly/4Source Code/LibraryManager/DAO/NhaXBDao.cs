@@ -82,7 +82,7 @@ namespace DAO
                 {
                     NhaXBDto temp = new NhaXBDto();
                     temp.Ma = dr["Ma"].ToString();
-                    temp.Ten = dr["STT"].ToString();
+                    temp.Ten = dr["Ten"].ToString();
 
                     list.Add(temp);
                 }
