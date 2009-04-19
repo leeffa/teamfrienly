@@ -8,15 +8,15 @@ namespace DAO
 {
    public  class LoaiTheDAO
     {
-        public static bool InsertLoaiThe(LoaiTheDTO  emp)
+        public static bool InsertLoaiThe(LoaiTheDTO  temp)
         {
             bool result = false;
             try
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@Ma", emp.Ma));
-                sqlParams.Add(new SqlParameter("@TenLoai", emp.TenLoai));
+                sqlParams.Add(new SqlParameter("@Ma", temp.Ma));
+                sqlParams.Add(new SqlParameter("@TenLoai", temp.TenLoai));
                 
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spInsertLoaiThe", sqlParams);
@@ -29,15 +29,15 @@ namespace DAO
             }
             return result;
         }
-      public static bool UpdateLoaiThe(LoaiTheDTO emp)
+      public static bool UpdateLoaiThe(LoaiTheDTO temp)
       {
           bool result = false;
           try
           {
               // Create List Sql Parameter
               List<SqlParameter> sqlParams = new List<SqlParameter>();
-              sqlParams.Add(new SqlParameter("@Ma", emp.Ma));
-              sqlParams.Add(new SqlParameter("@TenLoai", emp.TenLoai));
+              sqlParams.Add(new SqlParameter("@Ma", temp.Ma));
+              sqlParams.Add(new SqlParameter("@TenLoai", temp.TenLoai));
              
               // Call Store Procedure
               int n = SqlDataAccessHelper.ExecuteNoneQuery("spUpdateLoaiThe", sqlParams);
@@ -79,11 +79,11 @@ namespace DAO
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectLoaiTheAll");
               foreach (DataRow dr in dt.Rows)
               {
-                  LoaiTheDTO emp = new LoaiTheDTO();
-                  emp.Ma = dr["Ma"].ToString();
-                  emp.TenLoai = dr["TenLoai"].ToString();
+                  LoaiTheDTO temp = new LoaiTheDTO();
+                  temp.Ma = dr["Ma"].ToString().Trim();
+                  temp.TenLoai = dr["TenLoai"].ToString().Trim();
                  
-                  list.Add(emp);
+                  list.Add(temp);
               }
           }
           catch (Exception ex)
@@ -115,7 +115,7 @@ namespace DAO
       }
        public static LoaiTheDTO SelectLoaiTheByID(string ma)
        {
-           LoaiTheDTO emp = new LoaiTheDTO();
+           LoaiTheDTO temp = new LoaiTheDTO();
            try
            {
                // Create List Sql Parameter
@@ -123,18 +123,19 @@ namespace DAO
                sqlParams.Add(new SqlParameter("@Ma", ma));
 
                DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectLoaiTheByID", sqlParams);
+               if (dt.Rows.Count == 0)
+                   return temp;
+
                DataRow dr = dt.Rows[0];
-               emp.Ma = dr["Ma"].ToString();
-               emp.TenLoai = dr["TenLoai"].ToString();
-
-
+               temp.Ma = dr["Ma"].ToString().Trim();
+               temp.TenLoai = dr["TenLoai"].ToString().Trim();
 
            }
            catch (Exception ex)
            {
                throw ex;
            }
-           return emp;
+           return temp;
        }
 
     }

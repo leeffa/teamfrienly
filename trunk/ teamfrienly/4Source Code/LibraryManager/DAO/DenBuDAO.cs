@@ -17,6 +17,7 @@ namespace DAO
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
+                emp.Sothutu = SqlDataAccessHelper.ExecuteScalar("spLatSTT_DenBu") + 1;
                 sqlParams.Add(new SqlParameter("@STT", emp.Sothutu));
                 sqlParams.Add(new SqlParameter("@MaMuonSach", emp.Mamuonsach));
                 sqlParams.Add(new SqlParameter("@SoTien", emp.Sotien));

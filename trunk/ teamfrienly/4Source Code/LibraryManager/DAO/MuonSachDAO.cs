@@ -10,12 +10,13 @@ namespace DAO
     public class MuonSachDAO
     {
         // Inserting
-        public static bool Insert_MuonSach(MuonSachDTO ms)
+        public static bool Insert_MuonSach(ref MuonSachDTO ms)
         {
             bool result = false;
             try
             {
-                // Create List Sql Parameter
+               // Create List Sql Parameter
+                ms.MaMuonSach = SqlDataAccessHelper.ExecuteScalar("spLayMaMuonSach")+1;
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
                 sqlParams.Add(new SqlParameter("@MaMuonSach", ms.MaMuonSach));
                 sqlParams.Add(new SqlParameter("@MaSach", ms.MaSach));
@@ -26,7 +27,13 @@ namespace DAO
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spInsert_MuonSach", sqlParams);
                 if (n == 1)
+                {
                     result = true;
+
+                    SachMuonDTO smDto = new SachMuonDTO();
+                    smDto.MaMuonSach = ms.MaMuonSach;
+                    SachMuonDAO.InsertSachMuon(smDto);
+                }
             }
             catch (Exception ex)
             {
@@ -153,6 +160,29 @@ namespace DAO
                 throw ex;
             }
             return result;
+        }
+        public static MuonSachDTO  LayPhieuMuonSach_byMaSach(String maSach)
+        {
+            MuonSachDTO ms = new MuonSachDTO();
+            try
+            {
+                // Create List Sql Parameter
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                sqlParams.Add(new SqlParameter("@MaSach", maSach));
+                DataTable dt = SqlDataAccessHelper.ExecuteQuery("spLayMuonSach_byMaSach", sqlParams);
+                DataRow dr = dt.Rows[0];
+                ms.MaMuonSach = int.Parse(dr["MaMuonSach"].ToString());
+                ms.MaSach = dr["MaSach"].ToString();
+                ms.MaThe = dr["MaThe"].ToString();
+                ms.NgayHenTra = DateTime.Parse(dr["NgayHenTra"].ToString());
+                ms.NgayMuon = DateTime.Parse(dr["NgayMuon"].ToString());
+                ms.NgayTra = DateTime.Parse(dr["NgayTra"].ToString());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ms;
         }
     }
 }

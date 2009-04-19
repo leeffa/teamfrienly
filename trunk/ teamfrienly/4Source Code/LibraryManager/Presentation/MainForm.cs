@@ -14,5 +14,37 @@ namespace Presentation
         {
             InitializeComponent();
         }
+
+        private void muonSachToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name.Equals("frmMuonSach"))
+                {
+                    form.Close();
+                }
+            }
+            frmMuonSach frm = new frmMuonSach();
+            frm.MdiParent = this;
+            frm.TypeAction = "MuonSach";
+            frm.Show();
+        }
+
+      private void traSachToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name.Equals("frmMuonSach"))
+                {
+                    form.Close();
+                }
+            }
+            frmMuonSach frm = new frmMuonSach();
+            frm.MdiParent = this;
+            frm.TypeAction = "TraSach";
+            frm.Show();
+        }
+
+     
     }
 }

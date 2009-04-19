@@ -1,5 +1,3 @@
-bin\Debug\QLTV.mdf
-bin\Debug\QLTV_log.ldf
 bin\Debug\BUS.dll
 bin\Debug\BUS.pdb
 bin\Debug\DAO.dll

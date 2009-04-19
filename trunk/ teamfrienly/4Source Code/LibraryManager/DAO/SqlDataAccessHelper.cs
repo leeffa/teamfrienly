@@ -102,6 +102,7 @@ namespace DAO
                         }
                     }
                     n = command.ExecuteNonQuery();
+                    
                 }
 
                 catch (SqlException ex)
@@ -123,6 +124,56 @@ namespace DAO
         public static int ExecuteNoneQuery(String spName)
         {
             return ExecuteNoneQuery(spName, null);
+        }
+        #endregion
+
+        #region ExecuteScalar
+        public static int ExecuteScalar(String spName, List<SqlParameter> sqlParams)
+        {
+            int n=0;
+            try
+            {
+                SqlConnection connect = new SqlConnection(ConnectionString);
+                connect.Open();
+                try
+                {
+                    SqlCommand command = connect.CreateCommand();
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.CommandText = spName;
+                    if (sqlParams != null)
+                    {
+                        foreach (SqlParameter param in sqlParams)
+                        {
+                            command.Parameters.Add(param);
+                        }
+                    }
+
+                    object temp=command.ExecuteScalar();
+                    if (temp .ToString()!="")
+                        n = (int)temp;
+
+
+                }
+
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return n;
+        }
+        public static int ExecuteScalar(String spName)
+        {
+            return ExecuteScalar(spName, null);
         }
         #endregion
 

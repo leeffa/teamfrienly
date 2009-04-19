@@ -5,7 +5,7 @@ using DTO;
 using DAO;
 namespace BUS
 {
-    class SachMuonBUS
+    public class SachMuonBUS
     {
         public static bool InsertSachMuon(SachMuonDTO emp)
         {
@@ -42,5 +42,6 @@ namespace BUS
         {
             return SachMuonDAO.SelectSachMuonByID(ma);
         }
+      
     }
 }

@@ -76,11 +76,11 @@ namespace DAO
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachHongAll");
                 foreach (DataRow dr in dt.Rows)
                 {
-                    SachHongDTO emp = new SachHongDTO();
-                    emp.MaSach = dr["MaSach"].ToString();
-                    emp.STT = (int)dr["STT"];
+                    SachHongDTO temp = new SachHongDTO();
+                    temp.MaSach = dr["MaSach"].ToString();
+                    temp.STT = (int)dr["STT"];
 
-                    list.Add(emp);
+                    list.Add(temp);
                 }
             }
             catch (Exception ex)
@@ -112,7 +112,7 @@ namespace DAO
         }
        public static SachHongDTO SelectSachHongByID(string employeeID)
        {
-           SachHongDTO emp = new SachHongDTO();
+           SachHongDTO temp = new SachHongDTO();
            try
            {
                // Create List Sql Parameter
@@ -120,16 +120,18 @@ namespace DAO
                sqlParams.Add(new SqlParameter("@MaSach", employeeID));
 
                DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachHongByID", sqlParams);
+               if (dt.Rows.Count == 0)
+                   return temp;
                DataRow dr = dt.Rows[0];
-               emp.MaSach = dr["MaSach"].ToString();
-               emp.STT = (int)dr["STT"];
+               temp.MaSach = dr["MaSach"].ToString();
+               temp.STT = (int)dr["STT"];
 
            }
            catch (Exception ex)
            {
                throw ex;
            }
-           return emp;
+           return temp;
        }
     }
 }

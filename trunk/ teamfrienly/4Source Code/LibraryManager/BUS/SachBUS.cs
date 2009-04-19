@@ -44,11 +44,15 @@ namespace BUS
         }
         public static SachDTO SelectSachByMa(string  maS)
         {
-            if (SachDAO.CheckSachByMa(maS))
+            if (!SachDAO.CheckSachByMa(maS))
             {
                 return null;
             }
             return SachDAO.SelectSach_Ma (maS);
+        }
+        public static String KiemTraSach(String maSach)
+        {
+            return SachDAO.KiemTraSach(maSach);
         }
     }
 }
