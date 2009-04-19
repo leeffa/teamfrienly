@@ -54,10 +54,11 @@ namespace DTO
             ngaycap = new DateTime(1, 1, 1);
             ngayhethan = new DateTime(1, 1, 1);
             ten = "";
-            ngaysinh = new DateTime(1, 1, 1);
+            ngaysinh = new DateTime();
 
         }
       
 
     }
 }
+

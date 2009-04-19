@@ -10,17 +10,19 @@ namespace DAO
     public class PhatDAO
     {
         // Inserting
-        public static bool InsertPhat(PhatDTO emp)
+        public static bool InsertPhat(PhatDTO temp)
         {
             bool result = false;
             try
             {
                 // Create List Sql Parameter
+                //Lay STT
+                temp.Sothutu= SqlDataAccessHelper.ExecuteScalar("spLaySTT_Phat") + 1;
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@SoThuTu", emp.Sothutu));
-                sqlParams.Add(new SqlParameter("@MaMuonSach", emp.Masachmuon));
-                sqlParams.Add(new SqlParameter("@SoNgay", emp.Songay));
-                sqlParams.Add(new SqlParameter("@ThanhTien", emp.Thanhtien));
+                sqlParams.Add(new SqlParameter("@SoThuTu", temp.Sothutu));
+                sqlParams.Add(new SqlParameter("@MaMuonSach", temp.MaMuonSach));
+                sqlParams.Add(new SqlParameter("@SoNgay", temp.Songay));
+                sqlParams.Add(new SqlParameter("@ThanhTien", temp.Thanhtien));
 
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spInsertPhat", sqlParams);
@@ -33,17 +35,17 @@ namespace DAO
             }
             return result;
         }
-        public static bool UpdatePhat(PhatDTO emp)
+        public static bool UpdatePhat(PhatDTO temp)
         {
             bool result = false;
             try
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@SoThuTu", emp.Sothutu));
-                sqlParams.Add(new SqlParameter("@MaMuonSach", emp.Masachmuon));
-                sqlParams.Add(new SqlParameter("@SoNgay", emp.Songay));
-                sqlParams.Add(new SqlParameter("@ThanhTien", emp.Thanhtien));
+                sqlParams.Add(new SqlParameter("@SoThuTu", temp.Sothutu));
+                sqlParams.Add(new SqlParameter("@MaMuonSach", temp.MaMuonSach));
+                sqlParams.Add(new SqlParameter("@SoNgay", temp.Songay));
+                sqlParams.Add(new SqlParameter("@ThanhTien", temp.Thanhtien));
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spUpdatePhat", sqlParams);
                 if (n == 1)
@@ -82,12 +84,12 @@ namespace DAO
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectPhatAll");
                 foreach (DataRow dr in dt.Rows)
                 {
-                    PhatDTO emp = new PhatDTO();
-                    emp.Sothutu = (int)dr["STT"];
-                    emp.Masachmuon = dr["MaSachMuon"].ToString();
-                    emp.Songay = (int)dr["SoNgay"];
-                    emp.Thanhtien = (int)dr["ThanhTien"];
-                    list.Add(emp);
+                    PhatDTO temp = new PhatDTO();
+                    temp.Sothutu = (int)dr["STT"];
+                    temp.MaMuonSach = (int)dr["MaSachMuon"];
+                    temp.Songay = (int)dr["SoNgay"];
+                    temp.Thanhtien = (int)dr["ThanhTien"];
+                    list.Add(temp);
                 }
             }
             catch (Exception ex)
@@ -119,7 +121,7 @@ namespace DAO
         }
         public static PhatDTO SelectPhatByID(int STT)
         {
-            PhatDTO emp = new PhatDTO();
+            PhatDTO temp = new PhatDTO();
             try
             {
                 // Create List Sql Parameter
@@ -127,11 +129,13 @@ namespace DAO
                 sqlParams.Add(new SqlParameter("@STT", STT));
 
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectPhatByID", sqlParams);
+                if (dt.Rows.Count == 0)
+                    return temp;
                 DataRow dr = dt.Rows[0];
-                emp.Sothutu = (int)dr["STT"];
-                emp.Masachmuon = dr["MaMuonSach"].ToString();
-                emp.Songay = (int)dr["SoNgay"];
-                emp.Thanhtien = (int)dr["ThanhTien"];
+                temp.Sothutu = (int)dr["STT"];
+                temp.MaMuonSach = (int)dr["MaMuonSach"];
+                temp.Songay = (int)dr["SoNgay"];
+                temp.Thanhtien = (int)dr["ThanhTien"];
 
 
             }
@@ -139,7 +143,7 @@ namespace DAO
             {
                 throw ex;
             }
-            return emp;
+            return temp;
         }
     }
 }

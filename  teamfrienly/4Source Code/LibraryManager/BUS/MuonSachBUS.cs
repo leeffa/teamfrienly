@@ -9,13 +9,13 @@ namespace BUS
     public class MuonSachBUS
     {
         // Inserting
-        public static bool InsertMaMuonSach(MuonSachDTO  ms)
+        public static bool InsertMaMuonSach(ref MuonSachDTO  ms)
         {
-            if (MuonSachDAO .CheckMuonSachByMa (ms.MaMuonSach ))
-            {
-                return false;
-            }
-            return MuonSachDAO.Insert_MuonSach(ms);
+//             if (MuonSachDAO .CheckMuonSachByMa (ms.MaMuonSach ))
+//             {
+//                 return false;
+//             }
+            return MuonSachDAO.Insert_MuonSach(ref ms);
         }
         //Updating
         public static bool UpdateMuonSach(MuonSachDTO  ms)
@@ -50,5 +50,10 @@ namespace BUS
             }
             return MuonSachDAO.SelectMuonSach_Ma (maMS );
         }
+        public static MuonSachDTO LayPhieuMuonSach_byMaSach(String maSach)
+        {
+            return MuonSachDAO.LayPhieuMuonSach_byMaSach(maSach);
+        }
+
     }
 }

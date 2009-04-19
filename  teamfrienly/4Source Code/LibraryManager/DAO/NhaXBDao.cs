@@ -80,11 +80,11 @@ namespace DAO
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectNhaXBAll");
                 foreach (DataRow dr in dt.Rows)
                 {
-                    NhaXBDto emp = new NhaXBDto();
-                    emp.Ma = dr["Ma"].ToString();
-                    emp.Ten = dr["STT"].ToString();
+                    NhaXBDto temp = new NhaXBDto();
+                    temp.Ma = dr["Ma"].ToString();
+                    temp.Ten = dr["STT"].ToString();
 
-                    list.Add(emp);
+                    list.Add(temp);
                 }
             }
             catch (Exception ex)
@@ -116,7 +116,7 @@ namespace DAO
         }
         public static NhaXBDto SelectNhaXBByID(string ma)
         {
-            NhaXBDto emp = new NhaXBDto();
+            NhaXBDto temp = new NhaXBDto();
             try
             {
                 // Create List Sql Parameter
@@ -124,9 +124,11 @@ namespace DAO
                 sqlParams.Add(new SqlParameter("@Ma", ma));
 
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectNhaXBByID", sqlParams);
+                if (dt.Rows.Count == 0)
+                    return temp;
                 DataRow dr = dt.Rows[0];
-                emp.Ma = dr["Ma"].ToString();
-                emp.Ten = dr["Ten"].ToString();
+                temp.Ma = dr["Ma"].ToString();
+                temp.Ten = dr["Ten"].ToString();
                
 
 
@@ -135,7 +137,7 @@ namespace DAO
             {
                 throw ex;
             }
-            return emp;
+            return temp;
         }
     }
 }

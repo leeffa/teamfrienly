@@ -7,20 +7,20 @@ namespace BUS
 {
     public class TheBUS
     {
-        public static bool InsertThe(TheDTO emp)
+        public static bool InsertThe(TheDTO temp)
         {
-            if (TheDAO.CheckTheByID(emp.Ma))
+            if (TheDAO.CheckTheByID(temp.Ma))
             {
                 return false;
             }
-            return TheDAO.InsertThe(emp);
+            return TheDAO.InsertThe(temp);
         }
         //Updating
-        public static bool UpdateThe(TheDTO emp)
+        public static bool UpdateThe(TheDTO temp)
         {
-            if (TheDAO.CheckTheByID(emp.Ma))
+              if (TheDAO.CheckTheByID(temp.Ma))
             {
-                return TheDAO.UpdateThe(emp);
+                 return TheDAO.UpdateThe(temp);
             }
             return false;
 
@@ -38,14 +38,17 @@ namespace BUS
         {
             return TheDAO.SelectTheAll();
         }
-        public static TheDTO SelectTheByID(String employeeID)
+        public static TheDTO SelectTheByID(String ID)
         {
-            return TheDAO.SelectTheByID(employeeID);
+            return TheDAO.SelectTheByID(ID);
+        }
+        public static bool KiemTraThe(String maThe)        
+        {
+            return TheDAO.KiemTraThe(maThe);
         }
         public static List<TheDTO> SelectTheByLoaiThe(String maloaithe)
         {
             return TheDAO.SelectTheByLoaiThe(maloaithe);
         }
- 
     }
 }

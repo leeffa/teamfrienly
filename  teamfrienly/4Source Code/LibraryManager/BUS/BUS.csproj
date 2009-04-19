@@ -33,12 +33,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bus.cs" />
     <Compile Include="DenBuBUS.cs" />
     <Compile Include="LoaiSachBUS.cs" />
     <Compile Include="LoaiTheBUS.cs" />
     <Compile Include="MuonSachBUS.cs" />
     <Compile Include="NgonNguBus.cs" />
     <Compile Include="NhaXBBus.cs" />
+    <Compile Include="PhatBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SachBUS.cs" />
     <Compile Include="SachHongBUS.cs" />

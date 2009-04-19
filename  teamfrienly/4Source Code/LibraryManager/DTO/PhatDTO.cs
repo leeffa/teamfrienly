@@ -9,7 +9,7 @@ namespace DTO
         
         #region Attributes
         private int sothutu;
-        private string masachmuon;
+        private int maMuonSach;
         private int songay;
         private int thanhtien;
         #endregion Attributes
@@ -19,10 +19,10 @@ namespace DTO
             get { return sothutu; }
             set { Sothutu = value; }
         }
-        public string Masachmuon
+        public int MaMuonSach
         {
-            get { return masachmuon; }
-            set { masachmuon = value; }
+            get { return maMuonSach; }
+            set { maMuonSach = value; }
         }
         public int Songay
         {
@@ -38,7 +38,7 @@ namespace DTO
         public PhatDTO()
         {
             sothutu = 0;
-            masachmuon = "";
+            MaMuonSach = 0;
             songay = 0;
             thanhtien = 0;
         }

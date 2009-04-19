@@ -33,7 +33,7 @@ namespace DTO
         {
             ma = "";
             ten = "";
-            ngaysinh = new DateTime(1 , 1 , 1);
+            ngaysinh = new DateTime();
 
         }
 #endregion

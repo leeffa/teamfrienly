@@ -8,16 +8,17 @@ namespace DAO
 {
   public   class SachMuonDAO
     {
-         public static bool InsertSachMuon(SachMuonDTO  emp)
+         public static bool InsertSachMuon(SachMuonDTO  temp)
         {
             bool result = false;
             try
             {
+                temp.STT = SqlDataAccessHelper.ExecuteScalar("LaySTTSachMuon") + 1;
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@MaMuonSach", emp.MaMuonSach));
-                
-                
+                sqlParams.Add(new SqlParameter("@STT", temp.STT));
+                sqlParams.Add(new SqlParameter("@MaMuonSach", temp.MaMuonSach));
+
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spInsertSachMuon", sqlParams);
                 if (n == 1)
@@ -29,14 +30,14 @@ namespace DAO
             }
             return result;
         }
-      public static bool UpdateSachMuon(SachMuonDTO emp)
+      public static bool UpdateSachMuon(SachMuonDTO temp)
       {
           bool result = false;
           try
           {
               // Create List Sql Parameter
               List<SqlParameter> sqlParams = new List<SqlParameter>();
-              sqlParams.Add(new SqlParameter("@MaMuonSach", emp.MaMuonSach));
+              sqlParams.Add(new SqlParameter("@MaMuonSach", temp.MaMuonSach));
               
              
               // Call Store Procedure
@@ -77,11 +78,10 @@ namespace DAO
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachMuonAll");
               foreach (DataRow dr in dt.Rows)
               {
-                  SachMuonDTO emp = new SachMuonDTO();
-                  emp.MaMuonSach = (int)dr["MaMuonSach"];
-                  
-                 
-                  list.Add(emp);
+                  SachMuonDTO temp = new SachMuonDTO();
+                  temp.STT = (int)dr["STT"];
+                  temp.MaMuonSach = (int)dr["MaMuonSach"];
+                  list.Add(temp);
               }
           }
           catch (Exception ex)
@@ -111,18 +111,19 @@ namespace DAO
           }
           return result;
       }
-      public static SachMuonDTO SelectSachMuonByID(int employeeID)
+      public static SachMuonDTO SelectSachMuonByID(int maMuonSach)
       {
-          SachMuonDTO emp = new SachMuonDTO();
+          SachMuonDTO temp = new SachMuonDTO();
           try
           {
               // Create List Sql Parameter
               List<SqlParameter> sqlParams = new List<SqlParameter>();
-              sqlParams.Add(new SqlParameter("@MaMuonSach", employeeID));
+              sqlParams.Add(new SqlParameter("@MaMuonSach", maMuonSach));
 
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachMuonByID", sqlParams);
               DataRow dr = dt.Rows[0];
-              emp.MaMuonSach =(int) dr["MaMuonSach"];
+              temp.MaMuonSach =(int) dr["MaMuonSach"];
+              temp.STT = (int)dr["STT"];
              
 
           }
@@ -130,7 +131,7 @@ namespace DAO
           {
               throw ex;
           }
-          return emp;
+          return temp;
       }
 
     }

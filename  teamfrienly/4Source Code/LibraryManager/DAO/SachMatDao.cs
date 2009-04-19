@@ -16,6 +16,7 @@ namespace DAO
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
+                sachmatdtodto.STT = SqlDataAccessHelper.ExecuteScalar("spLaySTT_SachMat") + 1;
                 sqlParams.Add(new SqlParameter("@STT", sachmatdtodto.STT));
                 sqlParams.Add(new SqlParameter("@MaSach", sachmatdtodto.Ma));
                  // Call Store Procedure
@@ -78,11 +79,11 @@ namespace DAO
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachMatAll");
                 foreach (DataRow dr in dt.Rows)
                 {
-                    SachMatDto emp = new SachMatDto();
-                    emp.Ma = dr["Ma"].ToString();
-                    emp.STT =(int) dr["STT"];
+                    SachMatDto temp = new SachMatDto();
+                    temp.Ma = dr["Ma"].ToString();
+                    temp.STT =(int) dr["STT"];
                    
-                    list.Add(emp);
+                    list.Add(temp);
                 }
             }
             catch (Exception ex)
@@ -98,7 +99,7 @@ namespace DAO
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@Ma", ma));
+                sqlParams.Add(new SqlParameter("@MaSach", ma));
 
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachMatByID", sqlParams);
                 if (dt.Rows.Count == 1)
@@ -112,26 +113,28 @@ namespace DAO
             }
             return result;
         }
-        public static SachMatDto SelectSachMatByID(string employeeID)
+        public static SachMatDto SelectSachMatByID(string ID)
         {
-            SachMatDto emp = new SachMatDto();
+            SachMatDto temp = new SachMatDto();
             try
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@MaSach", employeeID));
+                sqlParams.Add(new SqlParameter("@MaSach", ID));
 
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachMatByID", sqlParams);
+                if (dt.Rows.Count == 0)
+                    return temp;
                 DataRow dr = dt.Rows[0];
-                emp.Ma = dr["MaSach"].ToString();
-                emp.STT = (int)dr["STT"];
+                temp.Ma = dr["MaSach"].ToString();
+                temp.STT = (int)dr["STT"];
 
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            return emp;
+            return temp;
         }
     }
 }

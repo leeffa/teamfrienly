@@ -10,19 +10,19 @@ namespace DAO
   public  class TheDAO
     {
         // Inserting
-        public static bool InsertThe(TheDTO  emp)
+        public static bool InsertThe(TheDTO  temp)
         {
             bool result = false;
             try
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@Ma", emp.Ma));
-                sqlParams.Add(new SqlParameter("@LoaiThe", emp.LoaiThe));
-                sqlParams.Add(new SqlParameter("@NgayCap", emp.NgayCap));
-                sqlParams.Add(new SqlParameter("@NgayHetHan", emp.NgayHetHan));
-                sqlParams.Add(new SqlParameter("@TenDocGia", emp.TenDocGia));
-                sqlParams.Add(new SqlParameter("@NgaySinh", emp.NgaySinh));
+                sqlParams.Add(new SqlParameter("@Ma", temp.Ma));
+                sqlParams.Add(new SqlParameter("@LoaiThe", temp.LoaiThe));
+                sqlParams.Add(new SqlParameter("@NgayCap", temp.NgayCap));
+                sqlParams.Add(new SqlParameter("@NgayHetHan", temp.NgayHetHan));
+                sqlParams.Add(new SqlParameter("@TenDocGia", temp.TenDocGia));
+                sqlParams.Add(new SqlParameter("@NgaySinh", temp.NgaySinh));
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spInsertThe", sqlParams);
                 if (n == 1)
@@ -34,19 +34,19 @@ namespace DAO
             }
             return result;
         }
-      public static bool UpdateThe(TheDTO emp)
+      public static bool UpdateThe(TheDTO temp)
       {
           bool result = false;
           try
           {
               // Create List Sql Parameter
               List<SqlParameter> sqlParams = new List<SqlParameter>();
-              sqlParams.Add(new SqlParameter("@Ma", emp.Ma));
-              sqlParams.Add(new SqlParameter("@LoaiThe", emp.LoaiThe));
-              sqlParams.Add(new SqlParameter("@NgayCap", emp.NgayCap));
-              sqlParams.Add(new SqlParameter("@NgayHetHan", emp.NgayHetHan));
-              sqlParams.Add(new SqlParameter("@TenDocGia", emp.TenDocGia));
-              sqlParams.Add(new SqlParameter("@NgaySinh", emp.NgaySinh));
+              sqlParams.Add(new SqlParameter("@Ma", temp.Ma));
+              sqlParams.Add(new SqlParameter("@LoaiThe", temp.LoaiThe));
+              sqlParams.Add(new SqlParameter("@NgayCap", temp.NgayCap));
+              sqlParams.Add(new SqlParameter("@NgayHetHan", temp.NgayHetHan));
+              sqlParams.Add(new SqlParameter("@TenDocGia", temp.TenDocGia));
+              sqlParams.Add(new SqlParameter("@NgaySinh", temp.NgaySinh));
               // Call Store Procedure
               int n = SqlDataAccessHelper.ExecuteNoneQuery("spUpdateThe", sqlParams);
               if (n == 1)
@@ -85,14 +85,14 @@ namespace DAO
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectTheAll");
               foreach (DataRow dr in dt.Rows)
               {
-                  TheDTO emp = new TheDTO();
-                  emp.Ma = dr["Ma"].ToString();
-                  emp.LoaiThe = dr["LoaiThe"].ToString();
-                  emp.NgayCap =(DateTime) dr["NgayCap"];
-                  emp.NgayHetHan = (DateTime)dr["NgayHetHan"];
-                  emp.TenDocGia= dr["TenDocGia"].ToString();
-                  emp.NgaySinh = (DateTime)dr["NgaySinh"];
-                  list.Add(emp);
+                  TheDTO temp = new TheDTO();
+                  temp.Ma = dr["Ma"].ToString();
+                  temp.LoaiThe = dr["LoaiThe"].ToString();
+                  temp.NgayCap =(DateTime) dr["NgayCap"];
+                  temp.NgayHetHan = (DateTime)dr["NgayHetHan"];
+                  temp.TenDocGia= dr["TenDocGia"].ToString();
+                  temp.NgaySinh = (DateTime)dr["NgaySinh"];
+                  list.Add(temp);
               }
           }
           catch (Exception ex)
@@ -122,31 +122,55 @@ namespace DAO
           }
           return result;
       }
-
-      public static TheDTO SelectTheByID(String employeeID)
+      public static TheDTO SelectTheByID(String ID)
       {
-          TheDTO emp = new TheDTO();
+         TheDTO temp = new TheDTO();
           try
           {
               // Create List Sql Parameter
               List<SqlParameter> sqlParams = new List<SqlParameter>();
-              sqlParams.Add(new SqlParameter("@Ma", employeeID));
+              sqlParams.Add(new SqlParameter("@Ma", ID));
 
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectTheByID", sqlParams);
+              if (dt.Rows.Count == 0)
+                  return temp;
               DataRow dr = dt.Rows[0];
-              emp.Ma = dr["Ma"].ToString();
-              emp.LoaiThe = dr["LoaiThe"].ToString();
-              emp.NgayCap = (DateTime)dr["NgayCap"];
-              emp.NgayHetHan = (DateTime)dr["NgayHetHan"];
-              emp.TenDocGia = dr["TenDocGia"].ToString();
-              emp.NgaySinh = (DateTime)dr["NgaySinh"];
+              temp.Ma= dr["Ma"].ToString().Trim();
+              temp.LoaiThe = dr["LoaiThe"].ToString().Trim();
+              temp.NgayCap = (DateTime) dr["NgayCap"];
+              temp.NgayHetHan = (DateTime)dr["NgayHetHan"];
+              temp.TenDocGia = dr["TenDocGia"].ToString().Trim();
+              if (dr["NgaySinh"].ToString()!="")
+                  temp.NgaySinh = (DateTime)dr["NgaySinh"];
           }
           catch (Exception ex)
           {
               throw ex;
           }
-          return emp;
+          return temp;
       }
+      public static bool KiemTraThe(String maThe)
+      {
+          try
+          {
+              List<SqlParameter> sqlParams = new List<SqlParameter>();
+              sqlParams.Add(new SqlParameter("@Ma", maThe));
+
+              DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectTheByID", sqlParams);
+              if (dt.Rows.Count == 0)
+                  return false;
+              DataRow dr = dt.Rows[0];
+              if (DateTime.Compare((DateTime)dr["NgayHetHan"], DateTime.Now) < 0)
+                  return false;
+              else
+                  return true;             
+          }
+          catch (Exception ex)
+          {
+              throw ex;
+          }
+      }
+
       public static List<TheDTO> SelectTheByLoaiThe(String maloaithe)
       {
           List<TheDTO> list = new List<TheDTO>();
@@ -155,7 +179,7 @@ namespace DAO
           {
               // Create List Sql Parameter
               List<SqlParameter> sqlParams = new List<SqlParameter>();
-              sqlParams.Add(new SqlParameter("@Ma",maloaithe));
+              sqlParams.Add(new SqlParameter("@Ma", maloaithe));
 
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectTheByLoaiThe", sqlParams);
               foreach (DataRow dr in dt.Rows)
@@ -167,16 +191,21 @@ namespace DAO
                   the.NgayCap = (DateTime)dr["NgayCap"];
                   the.NgayHetHan = (DateTime)dr["NgayHetHan"];
                   the.TenDocGia = dr["TenDocGia"].ToString();
-                  the.NgaySinh = (DateTime)dr["NgaySinh"];
-                  list.Add(the);  
+                  if (dr["NgaySinh"].ToString()!="")
+                  {
+                      the.NgaySinh = (DateTime)dr["NgaySinh"];
+                  }                  
+                  list.Add(the);
               }
 
-         }
+          }
           catch (Exception ex)
           {
               throw ex;
           }
           return list;
       }
+
     }
 }
+
