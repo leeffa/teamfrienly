@@ -7,10 +7,10 @@ using System.Xml;
 
 namespace DAO
 {
-    public class SqlDataAccessHelper
+    public static class SqlDataAccessHelper
     {       
         #region ConnectionString
-        protected static String connectionString;
+       public static String connectionString;
         public static String ConnectionString
         {
             get
@@ -125,6 +125,52 @@ namespace DAO
         {
             return ExecuteNoneQuery(spName, null);
         }
+        //commain text
+        public static DataTable ExecuteQueryText(String spName, List<SqlParameter> sqlParams)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlConnection connect = new SqlConnection(ConnectionString);
+                connect.Open();
+                try
+                {
+                    SqlCommand command = connect.CreateCommand();
+                    command.CommandType = CommandType.Text;
+                    command.CommandText = spName;
+                    if (sqlParams != null)
+                    {
+                        foreach (SqlParameter param in sqlParams)
+                        {
+                            command.Parameters.Add(param);
+                        }
+                    }
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    adapter.SelectCommand = command;
+                    adapter.Fill(dt);
+                }
+
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dt;
+        }
+        public static DataTable ExecuteQueryText(String spName)
+        {
+            return ExecuteQueryText(spName, null);
+        }
+        //end
         #endregion
 
         #region ExecuteScalar

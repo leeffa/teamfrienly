@@ -45,6 +45,13 @@ namespace Presentation
             frm.Show();
         }
 
+        private void sáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTraCuuSach frm= new frmTraCuuSach();
+            frm.Show();
+
+        }
+
      
     }
 }

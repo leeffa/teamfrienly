@@ -82,7 +82,8 @@ namespace DAO
                     TacGiaDto temp = new TacGiaDto();
                     temp.Ma = dr["Ma"].ToString();
                     temp.Ten = dr["Ten"].ToString();
-                    temp.NgaySinh = (DateTime)dr["NgaySinh"];
+                    if(dr["NgaySinh"].ToString() != "")
+                            temp.NgaySinh = (DateTime)dr["NgaySinh"];
                     list.Add(temp);
                 }
             }

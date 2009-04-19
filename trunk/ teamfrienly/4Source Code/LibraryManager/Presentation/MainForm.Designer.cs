@@ -1,4 +1,4 @@
-namespace Presentation
+﻿namespace Presentation
 {
     partial class MainForm
     {
@@ -32,13 +32,16 @@ namespace Presentation
             this.quanLyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.muonSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.traCứuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quanLyToolStripMenuItem});
+            this.quanLyToolStripMenuItem,
+            this.traCứuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -52,7 +55,7 @@ namespace Presentation
             this.muonSachToolStripMenuItem,
             this.traSachToolStripMenuItem});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
-            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.quanLyToolStripMenuItem.Text = "Quan ly";
             // 
             // muonSachToolStripMenuItem
@@ -68,6 +71,21 @@ namespace Presentation
             this.traSachToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.traSachToolStripMenuItem.Text = "Tra Sach";
             this.traSachToolStripMenuItem.Click += new System.EventHandler(this.traSachToolStripMenuItem_Click);
+            // 
+            // traCứuToolStripMenuItem
+            // 
+            this.traCứuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sáchToolStripMenuItem});
+            this.traCứuToolStripMenuItem.Name = "traCứuToolStripMenuItem";
+            this.traCứuToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.traCứuToolStripMenuItem.Text = "Tra cứu";
+            // 
+            // sáchToolStripMenuItem
+            // 
+            this.sáchToolStripMenuItem.Name = "sáchToolStripMenuItem";
+            this.sáchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sáchToolStripMenuItem.Text = "Sách";
+            this.sáchToolStripMenuItem.Click += new System.EventHandler(this.sáchToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -95,5 +113,7 @@ namespace Presentation
         private System.Windows.Forms.ToolStripMenuItem quanLyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem muonSachToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem traSachToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem traCứuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sáchToolStripMenuItem;
     }
 }
