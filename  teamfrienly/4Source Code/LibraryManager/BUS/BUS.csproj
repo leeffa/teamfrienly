@@ -48,7 +48,6 @@
     <Compile Include="SachMuonBUS.cs" />
     <Compile Include="TacGiaBus.cs" />
     <Compile Include="TheBUS.cs" />
-    <Compile Include="TheDocGiaBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

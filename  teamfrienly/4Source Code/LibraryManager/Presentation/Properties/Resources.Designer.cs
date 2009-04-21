@@ -59,5 +59,12 @@ namespace Presentation.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap ttsach {
+            get {
+                object obj = ResourceManager.GetObject("ttsach", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

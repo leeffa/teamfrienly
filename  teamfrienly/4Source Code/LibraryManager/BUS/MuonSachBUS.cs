@@ -55,5 +55,11 @@ namespace BUS
             return MuonSachDAO.LayPhieuMuonSach_byMaSach(maSach);
         }
 
+        public static MuonSachDTO SelectedMuonSach_byMaSach(String maSach)
+        {
+            return MuonSachDAO.SelectMuonSach_MaSach(maSach);
+           
+        }
+
     }
 }

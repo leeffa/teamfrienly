@@ -54,5 +54,10 @@ namespace BUS
         {
             return SachDAO.KiemTraSach(maSach);
         }
+
+        public static bool CheckMaSach(String maSach)
+        {
+            return SachDAO.CheckSachByMa(maSach);
+        }
     }
 }

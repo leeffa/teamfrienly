@@ -38,6 +38,7 @@ namespace DAO
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
+                sqlParams.Add(new SqlParameter("@Ma", tacgiadto.Ma));
                 sqlParams.Add(new SqlParameter("@Ten", tacgiadto.Ten));
                 sqlParams.Add(new SqlParameter("@NgaySinh", tacgiadto.NgaySinh));
                  // Call Store Procedure
@@ -71,6 +72,28 @@ namespace DAO
             }
             return result;
         }
+       /* public static List<TacGiaDto> SelectTacGiaAll()
+        {
+            List<TacGiaDto> list = new List<TacGiaDto>();
+            try
+            {
+                DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectTacgiaAll");
+                foreach (DataRow dr in dt.Rows)
+                {
+                    TacGiaDto temp = new TacGiaDto();
+                    temp.Ma = dr["Ma"].ToString();
+                    temp.Ten = dr["Ten"].ToString();
+                    temp.NgaySinh = (DateTime)dr["NgaySinh"];
+                    list.Add(temp);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return list;
+        }*/
+
         public static List<TacGiaDto> SelectTacGiaAll()
         {
             List<TacGiaDto> list = new List<TacGiaDto>();
@@ -82,8 +105,8 @@ namespace DAO
                     TacGiaDto temp = new TacGiaDto();
                     temp.Ma = dr["Ma"].ToString();
                     temp.Ten = dr["Ten"].ToString();
-                    if(dr["NgaySinh"].ToString() != "")
-                            temp.NgaySinh = (DateTime)dr["NgaySinh"];
+                    if (dr["NgaySinh"].ToString() != "")
+                        temp.NgaySinh = (DateTime)dr["NgaySinh"];
                     list.Add(temp);
                 }
             }
@@ -93,6 +116,7 @@ namespace DAO
             }
             return list;
         }
+
         public static bool CheckTacGiaByID(String ma)
         {
             bool result = false;

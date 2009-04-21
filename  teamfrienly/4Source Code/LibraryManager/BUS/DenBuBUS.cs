@@ -51,5 +51,14 @@ namespace BUS
             }
             return DenBuDAO.SelectDenBu_Ma (maSachMuon);
         }
+
+        public static bool SelectDenBuByMaMuonSach(int maSachMuon)
+        {
+            
+            return DenBuDAO.CheckDenBuByMaMuonSach (maSachMuon);
+           // return DenBuDAO.CheckDenBuByMaMuonSach(maSachMuon);
+        }
+
+       
     }
 }

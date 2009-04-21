@@ -59,7 +59,7 @@ namespace DAO
             {
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@Ma", ma));
+                sqlParams.Add(new SqlParameter("@MaSach", ma));
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spDelete_SachMat", sqlParams);
                 if (n == 1)

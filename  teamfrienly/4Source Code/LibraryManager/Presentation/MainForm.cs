@@ -52,6 +52,19 @@ namespace Presentation
 
         }
 
+        private void thongTinSachToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name.Equals("frmSach"))
+                    form.Close();
+            }
+            frmSach frm = new frmSach();
+            frm.MdiParent = this;
+
+            frm.Show();
+        }
+
      
     }
 }

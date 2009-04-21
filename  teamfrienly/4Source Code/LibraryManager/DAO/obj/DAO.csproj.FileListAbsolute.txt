@@ -26,3 +26,10 @@ C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\DAO\bin\Debug\DTO.pdb
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\DAO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\DAO\obj\Debug\DAO.dll
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\DAO\obj\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\Phuc\DAO\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\Phuc\DAO\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\Phuc\DAO\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\Phuc\DAO\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\Phuc\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\Phuc\DAO\obj\Debug\DAO.dll
+C:\Users\thongoc\Desktop\Phuc\DAO\obj\Debug\DAO.pdb

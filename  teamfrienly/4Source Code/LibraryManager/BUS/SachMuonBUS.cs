@@ -38,9 +38,14 @@ namespace BUS
         {
             return SachMuonDAO.SelectSachMuonAll();
         }
-        public static SachMuonDTO SelectTheByID(int ma)
+        public static SachMuonDTO SelectSachMuonByID(int ma)
         {
             return SachMuonDAO.SelectSachMuonByID(ma);
+        }
+
+        public static bool  CheckedSachMuonByID(int ma)
+        {
+            return SachMuonDAO.CheckSachMuonByID (ma);
         }
       
     }

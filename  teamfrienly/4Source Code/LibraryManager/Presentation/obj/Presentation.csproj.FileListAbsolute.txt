@@ -56,3 +56,21 @@ C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\Presentation\obj\Debug\Pre
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\Presentation\obj\Debug\Presentation.TheForm.resources
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\Presentation\obj\Debug\Presentation.frmTraCuuSach.resources
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.exe
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.pdb
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\Presentation.exe
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\Presentation.pdb
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\BUS.dll
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\BUS.pdb
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\Phuc\Presentation\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.frmMuonSach.resources
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.frmTraCuuSach.resources
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.MainForm.resources
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.TheForm.resources
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
+C:\Users\thongoc\Desktop\Phuc\Presentation\obj\Debug\Presentation.frmSach.resources

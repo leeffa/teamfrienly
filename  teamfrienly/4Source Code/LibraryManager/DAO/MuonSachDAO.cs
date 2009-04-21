@@ -77,6 +77,7 @@ namespace DAO
                 // Create List Sql Parameter
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
                 sqlParams.Add(new SqlParameter("@MaMuonSach", ma));
+
                 // Call Store Procedure
                 int n = SqlDataAccessHelper.ExecuteNoneQuery("spDelete_MuonSach_Ma", sqlParams);
                 if (n == 1)
@@ -170,6 +171,30 @@ namespace DAO
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
                 sqlParams.Add(new SqlParameter("@MaSach", maSach));
                 DataTable dt = SqlDataAccessHelper.ExecuteQuery("spLayMuonSach_byMaSach", sqlParams);
+                DataRow dr = dt.Rows[0];
+                ms.MaMuonSach = int.Parse(dr["MaMuonSach"].ToString());
+                ms.MaSach = dr["MaSach"].ToString();
+                ms.MaThe = dr["MaThe"].ToString();
+                ms.NgayHenTra = DateTime.Parse(dr["NgayHenTra"].ToString());
+                ms.NgayMuon = DateTime.Parse(dr["NgayMuon"].ToString());
+                ms.NgayTra = DateTime.Parse(dr["NgayTra"].ToString());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ms;
+        }
+
+        public static MuonSachDTO SelectMuonSach_MaSach(string ma)
+        {
+            MuonSachDTO ms = new MuonSachDTO();
+            try
+            {
+                // Create List Sql Parameter
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                sqlParams.Add(new SqlParameter("@MaSach", ma));
+                DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectMuonSachByMaSach", sqlParams);
                 DataRow dr = dt.Rows[0];
                 ms.MaMuonSach = int.Parse(dr["MaMuonSach"].ToString());
                 ms.MaSach = dr["MaSach"].ToString();

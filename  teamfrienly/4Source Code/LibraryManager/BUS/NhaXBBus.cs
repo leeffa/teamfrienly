@@ -8,7 +8,7 @@ namespace BUS
 {
     public class NhaXBBus
     {
-        public bool Insert_NhaXB(NhaXBDto NhaXBDto)
+        public static bool Insert_NhaXB(NhaXBDto NhaXBDto)
         {
             if (NhaXBDao.CheckNhaXBByID(NhaXBDto.Ma))
             {

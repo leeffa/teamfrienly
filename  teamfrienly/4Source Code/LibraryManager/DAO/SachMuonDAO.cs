@@ -39,7 +39,7 @@ namespace DAO
               List<SqlParameter> sqlParams = new List<SqlParameter>();
               sqlParams.Add(new SqlParameter("@MaMuonSach", temp.MaMuonSach));
               
-            
+             
               // Call Store Procedure
               int n = SqlDataAccessHelper.ExecuteNoneQuery("spUpdateSachMuon", sqlParams);
               if (n == 1)
@@ -123,7 +123,7 @@ namespace DAO
               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectSachMuonByID", sqlParams);
               DataRow dr = dt.Rows[0];
               temp.MaMuonSach =(int) dr["MaMuonSach"];
-              temp.STT = (int)dr["STT"];
+             // temp.STT = (int)dr["STT"];
              
 
           }
