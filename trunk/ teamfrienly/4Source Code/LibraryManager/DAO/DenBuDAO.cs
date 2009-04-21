@@ -139,5 +139,26 @@ namespace DAO
             }
             return result;
         }
+        public static bool CheckDenBuByMaMuonSach(int ma)
+        {
+            bool result = false;
+            try
+            {
+                // Create List Sql Parameter
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                sqlParams.Add(new SqlParameter("@MaMuonSach", ma));
+
+                DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectMaMuonSachDenBu", sqlParams);
+                if (dt.Rows.Count == 1)
+                {
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return result;
+        }
     }
 }

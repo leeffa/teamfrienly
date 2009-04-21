@@ -36,6 +36,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSach.designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTraCuuSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>frmMuonSach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSach.resx">
+      <DependentUpon>frmSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTraCuuSach.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmTraCuuSach.cs</DependentUpon>
@@ -80,6 +90,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -110,6 +121,10 @@
       <Project>{A3D74499-185C-40C1-9D1C-F53B4C4FC23A}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConnectionString.xml" />
+    <None Include="picture\ttsach.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

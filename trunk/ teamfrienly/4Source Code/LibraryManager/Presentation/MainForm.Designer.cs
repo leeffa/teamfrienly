@@ -34,6 +34,7 @@
             this.traSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traCứuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thongTinSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@
             // 
             this.quanLyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.muonSachToolStripMenuItem,
-            this.traSachToolStripMenuItem});
+            this.traSachToolStripMenuItem,
+            this.thongTinSachToolStripMenuItem});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
             this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.quanLyToolStripMenuItem.Text = "Quan ly";
@@ -61,14 +63,14 @@
             // muonSachToolStripMenuItem
             // 
             this.muonSachToolStripMenuItem.Name = "muonSachToolStripMenuItem";
-            this.muonSachToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.muonSachToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.muonSachToolStripMenuItem.Text = "Muon sach";
             this.muonSachToolStripMenuItem.Click += new System.EventHandler(this.muonSachToolStripMenuItem_Click);
             // 
             // traSachToolStripMenuItem
             // 
             this.traSachToolStripMenuItem.Name = "traSachToolStripMenuItem";
-            this.traSachToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.traSachToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.traSachToolStripMenuItem.Text = "Tra Sach";
             this.traSachToolStripMenuItem.Click += new System.EventHandler(this.traSachToolStripMenuItem_Click);
             // 
@@ -86,6 +88,13 @@
             this.sáchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sáchToolStripMenuItem.Text = "Sách";
             this.sáchToolStripMenuItem.Click += new System.EventHandler(this.sáchToolStripMenuItem_Click);
+            // 
+            // thongTinSachToolStripMenuItem
+            // 
+            this.thongTinSachToolStripMenuItem.Name = "thongTinSachToolStripMenuItem";
+            this.thongTinSachToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.thongTinSachToolStripMenuItem.Text = "Thong Tin Sach";
+            this.thongTinSachToolStripMenuItem.Click += new System.EventHandler(this.thongTinSachToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -115,5 +124,6 @@
         private System.Windows.Forms.ToolStripMenuItem traSachToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem traCứuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sáchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thongTinSachToolStripMenuItem;
     }
 }

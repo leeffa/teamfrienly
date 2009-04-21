@@ -34,3 +34,12 @@ C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\bin\Debug\DAO.pdb
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\obj\Debug\BUS.dll
 C:\Users\ntphuc\Desktop\New Folder (2)\LibraryManager\BUS\obj\Debug\BUS.pdb
+C:\Users\thongoc\Desktop\Phuc\BUS\bin\Debug\BUS.dll
+C:\Users\thongoc\Desktop\Phuc\BUS\bin\Debug\BUS.pdb
+C:\Users\thongoc\Desktop\Phuc\BUS\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\Phuc\BUS\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\Phuc\BUS\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\Phuc\BUS\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\Phuc\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\Phuc\BUS\obj\Debug\BUS.dll
+C:\Users\thongoc\Desktop\Phuc\BUS\obj\Debug\BUS.pdb
