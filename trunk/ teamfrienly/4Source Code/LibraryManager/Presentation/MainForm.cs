@@ -52,7 +52,8 @@ namespace Presentation
 
         }
 
-        private void thongTinSachToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void thôngTinSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Form form in this.MdiChildren)
             {

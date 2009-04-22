@@ -124,6 +124,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ConnectionString.xml" />
+    <None Include="picture\1.bmp" />
+    <None Include="picture\helpfast.gif" />
+    <None Include="picture\tux-teacher-2_overlord59-tux.ico" />
+    <None Include="picture\abc.jpg" />
+    <None Include="picture\dagron.ico" />
+    <None Include="picture\Copy of docgia.ICO" />
+    <None Include="picture\01 %2832%29.ico" />
+    <None Include="picture\BOOKS04.ICO" />
+    <None Include="picture\01 %2814%29.ico" />
+    <None Include="picture\favicon.ico" />
+    <None Include="picture\Options.png" />
+    <None Include="picture\My Documents.ico" />
+    <None Include="picture\nen.jpg" />
     <None Include="picture\ttsach.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
