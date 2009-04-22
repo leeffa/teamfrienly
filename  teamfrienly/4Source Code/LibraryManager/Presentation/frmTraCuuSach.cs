@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -130,13 +130,37 @@ namespace Presentation
             textBox_giatu.Enabled = false;
             
         }
-
+        public void TimTenTuongUng(DataTable dt)
+        {
+            DataColumn d = new DataColumn();
+            d.ColumnName = "Tình trạng";
+            // d.Caption="Tình trạng";
+            dt.Columns.Add(d);
+            foreach (DataRow dr in dt.Rows)
+            {
+                string MaTacGia = (string)dr["TacGia"];
+                TacGiaDto tg = TacGiaBus.SelectTheByID(MaTacGia);
+                dr["TacGia"] = tg.Ten;
+                string Loai = (string)dr["LoaiSach"];
+                LoaiSachDTO ls = LoaiSachBUS.SelectLoaiSachByMa(Loai);
+                dr["LoaiSach"] = ls.Ten;
+                string mann = (string)dr["NgonNgu"];
+                NgonNguDto nn = NgonNguBus.SelectNgonNguByID(mann);
+                dr["NgonNgu"] = nn.Ten;
+                string ManXB = (string)dr["NhaXB"];
+                NhaXBDto nxb = NhaXBBus.SelectNhaXBByID(ManXB);
+                dr["NhaXB"] = nxb.Ten;
+                string masach = (string)dr["Ma"];
+                dr["Tình trạng"] = SachBUS.KiemTraSach(masach);
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             sqlParams = new List<SqlParameter>();
-           string Strsql= BuildQuery();
-           DataTable dt = SqlDataAccessHelper.ExecuteQueryText(Strsql,sqlParams);
-           dataGridView1.DataSource = dt;
+            string Strsql = BuildQuery();
+            DataTable dt = SqlDataAccessHelper.ExecuteQueryText(Strsql, sqlParams);
+            TimTenTuongUng(dt);
+            dataGridView1.DataSource = dt;
         }
 
         private void checkBox_loaisach_CheckedChanged(object sender, EventArgs e)

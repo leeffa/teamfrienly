@@ -28,3 +28,8 @@ C:\Users\thongoc\Desktop\22\DTO\bin\Debug\DTO.pdb
 C:\Users\thongoc\Desktop\22\DTO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\thongoc\Desktop\22\DTO\obj\Debug\DTO.dll
 C:\Users\thongoc\Desktop\22\DTO\obj\Debug\DTO.pdb
+C:\Users\ntphuc\Desktop\R47\LibraryManager\DTO\bin\Debug\DTO.dll
+C:\Users\ntphuc\Desktop\R47\LibraryManager\DTO\bin\Debug\DTO.pdb
+C:\Users\ntphuc\Desktop\R47\LibraryManager\DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ntphuc\Desktop\R47\LibraryManager\DTO\obj\Debug\DTO.dll
+C:\Users\ntphuc\Desktop\R47\LibraryManager\DTO\obj\Debug\DTO.pdb
