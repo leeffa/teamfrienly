@@ -40,11 +40,11 @@ namespace BUS
         }
         public static LoaiSachDTO SelectLoaiSachByMa(string ma)
         {
-           // if (LoaiSachDAO.CheckLoaiSachByMa(ma))
-           // {
-           //     return null;
-           // }
-            return LoaiSachDAO.SelectLoaiSach_Ma (ma);
+            if (LoaiSachDAO.CheckLoaiSachByMa(ma))
+            {
+                return LoaiSachDAO.SelectLoaiSach_Ma(ma);
+            }
+            return null;
         }
     }
 }
