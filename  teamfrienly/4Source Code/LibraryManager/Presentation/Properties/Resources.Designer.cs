@@ -60,9 +60,114 @@ namespace Presentation.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _01__14_ {
+            get {
+                object obj = ResourceManager.GetObject("01 (14)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap _01__32_ {
+            get {
+                object obj = ResourceManager.GetObject("01 (32)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap abc {
+            get {
+                object obj = ResourceManager.GetObject("abc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap abc1 {
+            get {
+                object obj = ResourceManager.GetObject("abc1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap BOOKS04 {
+            get {
+                object obj = ResourceManager.GetObject("BOOKS04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Copy_of_docgia {
+            get {
+                object obj = ResourceManager.GetObject("Copy of docgia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap dagron {
+            get {
+                object obj = ResourceManager.GetObject("dagron", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap favicon {
+            get {
+                object obj = ResourceManager.GetObject("favicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap helpfast {
+            get {
+                object obj = ResourceManager.GetObject("helpfast", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap My_Documents {
+            get {
+                object obj = ResourceManager.GetObject("My Documents", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap nen {
+            get {
+                object obj = ResourceManager.GetObject("nen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Options {
+            get {
+                object obj = ResourceManager.GetObject("Options", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Options1 {
+            get {
+                object obj = ResourceManager.GetObject("Options1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap ttsach {
             get {
                 object obj = ResourceManager.GetObject("ttsach", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap tux_teacher_2_overlord59_tux {
+            get {
+                object obj = ResourceManager.GetObject("tux-teacher-2_overlord59-tux", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

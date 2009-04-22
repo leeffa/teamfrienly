@@ -200,5 +200,15 @@ namespace Presentation
             else
                 e.Handled = true;
         }
+
+        private void buttonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textBox_giatu_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
