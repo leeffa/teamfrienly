@@ -79,6 +79,19 @@ namespace Presentation
             frm.Show();
         }
 
+        private void tToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name.Equals("TheForm"))
+                    form.Close();
+            }
+            TheForm frm = new TheForm();
+            frm.MdiParent = this;
+
+            frm.Show();
+        }
+
      
     }
 }

@@ -34,8 +34,8 @@
             this.muonSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traCứuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýKhoSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +58,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(816, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(929, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -100,21 +100,21 @@
             this.traCứuToolStripMenuItem.Size = new System.Drawing.Size(112, 36);
             this.traCứuToolStripMenuItem.Text = "Tra cứu       ";
             // 
-            // sáchToolStripMenuItem
-            // 
-            this.sáchToolStripMenuItem.Image = global::Presentation.Properties.Resources.Options;
-            this.sáchToolStripMenuItem.Name = "sáchToolStripMenuItem";
-            this.sáchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sáchToolStripMenuItem.Text = "Sách";
-            this.sáchToolStripMenuItem.Click += new System.EventHandler(this.sáchToolStripMenuItem_Click);
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = global::Presentation.Properties.Resources.Options;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(99, 22);
             this.toolStripMenuItem1.Text = "Thẻ";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // sáchToolStripMenuItem
+            // 
+            this.sáchToolStripMenuItem.Image = global::Presentation.Properties.Resources.Options;
+            this.sáchToolStripMenuItem.Name = "sáchToolStripMenuItem";
+            this.sáchToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.sáchToolStripMenuItem.Text = "Sách";
+            this.sáchToolStripMenuItem.Click += new System.EventHandler(this.sáchToolStripMenuItem_Click);
             // 
             // quảnLýKhoSáchToolStripMenuItem
             // 
@@ -156,8 +156,9 @@
             // 
             this.tToolStripMenuItem.Image = global::Presentation.Properties.Resources.Options;
             this.tToolStripMenuItem.Name = "tToolStripMenuItem";
-            this.tToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.tToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.tToolStripMenuItem.Text = "Thẻ Đọc Giả";
+            this.tToolStripMenuItem.Click += new System.EventHandler(this.tToolStripMenuItem_Click);
             // 
             // thôngTinTácGiảToolStripMenuItem1
             // 
@@ -173,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Presentation.Properties.Resources.nen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(816, 521);
+            this.ClientSize = new System.Drawing.Size(929, 521);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
