@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project name="BuildSkeleton" default="go">
+	<description>The skeleton file for the build process</description>
+	<property name="nant.onfailure" value="fail" />
+	<property name="project.rootdirectory" value="." />
+	<property name="WorkingDir" value="." />
+	<property name="solution.dir" value="${WorkingDir}\ teamfrienly\4Source Code\LibraryManager" />
+	<property name="solution.file" value="${solution.dir}/LibraryManage.sln" />
+	<property name="project.dir" value="${WorkingDir}/ teamfrienly\4SourceCode\LibraryManager" />
+	<property name="build.configuration" value="debug" />
+	<property name="SVN_ADDR" value="https://teamfrienly.googlecode.com/svn/trunk/" />
+	<property name="SVN_DIR" value="." />
+	<!-- Name: 'DataBase.dir' Value: ' teamfrienly/5Database/' -->
+	<property name="DataBase.dir" value="./ teamfrienly/5Database/" />
+	<target name="go" description="The main target for full build process execution." depends="CreateDatabase, test" />
+	<target name="clean" description="Clean up the build environment.">
+		<echo message="Xoa day" />
+		<delete dir="${solution.dir}\DAO\bin" />
+		<delete dir="${solution.dir}\DAO\obj" />
+		<delete dir="${solution.dir}\DTO\bin" />
+		<delete dir="${solution.dir}\DTO\obj" />
+		<delete dir="${solution.dir}\BUS\bin" />
+		<delete dir="${solution.dir}\BUS\obj" />
+		<delete dir="${solution.dir}\Presentation\bin" />
+		<delete dir="${solution.dir}\Presentation\obj" />
+		<echo message="Xoa Xong" />
+	</target>
+	<target name="get" description="Grab the source code.">
+		<exec program="svn.exe" commandline="checkout --username leeffa.it --password eW9my3mF7mE7 ">
+			<arg value="${SVN_ADDR}" />
+			<arg value="${SVN_DIR}" />
+		</exec>
+	</target>
+	<target name="version" description="Apply versioning to the source code.">
+		<!--Enter tasks for version target-->
+		<echo message="${fileversioninfo::get-file-version()}"/>
+	</target>
+	<target name="build" description="Compile the application.">
+		<!-- Enter tasks for build target -->
+		<exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" workingdir="${solution.dir}" />
+	</target>
+	<target name="CreateDatabase">
+		<copy file="${DataBase.dir}/createDB.sql" todir="${WorkingDir}"></copy>
+		<copy file="${DataBase.dir}/createTable.sql" todir="${WorkingDir}"></copy>		
+		<copy file="${DataBase.dir}/CreateSP.sql" todir="${WorkingDir}"></copy>		
+		<copy file="${DataBase.dir}/InsertDB.sql" todir="${WorkingDir}"></copy>		
+		
+		<exec program="sqlcmd.exe" commandline="-E -S  ${environment::get-machine-name()}\SQLEXPRESS -i createDB.sql " />
+		<exec program="sqlcmd.exe" commandline="-E -S ${environment::get-machine-name()}\SQLEXPRESS -i createTable.sql " />
+		<exec program="sqlcmd.exe" commandline="-E -S ${environment::get-machine-name()}\SQLEXPRESS -i CreateSP.sql " />
+		<exec program="sqlcmd.exe" commandline="-E -S ${environment::get-machine-name()}\SQLEXPRESS -i InsertDB.sql"/>
+		
+		<delete file="createDB.sql"></delete>
+		<delete file="createTable.sql"></delete>		
+		<delete file="CreateSP.sql"></delete>		
+		<delete file="InsertDB.sql"></delete>		
+		
+	</target>
+	<target name="test" description="Apply the unit tests.">
+		<!--Enter tasks for test target-->
+	</target>
+	<target name="help">
+		<!-- Enter tasks for help target -->
+		<echo message="The skeleton file for the build process is designed to execute the following targets in turn:" />
+		<echo message="-- clean" />
+		<echo message="-- get" />
+		<echo message="-- version" />
+		<echo message="-- build" />
+		<echo message="-- test" />
+		<echo message="-- document" />
+		<echo message="-- publish" />
+		<echo message="-- notify" />
+	</target>
+</project>
