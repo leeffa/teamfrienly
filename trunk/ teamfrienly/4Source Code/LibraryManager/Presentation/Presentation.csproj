@@ -93,6 +93,10 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TacGia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TacGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TheForm.resx">
       <DependentUpon>TheForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -110,6 +114,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacGia.Designer.cs">
+      <DependentUpon>TacGia.cs</DependentUpon>
     </Compile>
     <Compile Include="TheForm.cs">
       <SubType>Form</SubType>
@@ -134,6 +144,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ConnectionString.xml" />
+    <None Include="picture\bok.jpg" />
+    <None Include="picture\images.jpg" />
+    <None Include="picture\1.jpg" />
+    <None Include="picture\h2.jpg" />
+    <None Include="picture\home_fontpage.jpg" />
     <None Include="picture\1.bmp" />
     <None Include="picture\helpfast.gif" />
     <None Include="picture\tux-teacher-2_overlord59-tux.ico" />

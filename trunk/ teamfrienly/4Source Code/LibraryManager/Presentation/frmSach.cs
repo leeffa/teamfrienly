@@ -19,6 +19,14 @@ namespace Presentation
         {
             InitializeComponent();
         }
+
+        public void ShowMaster()
+        {
+            this.dataGridView1 .AutoGenerateColumns = false;
+            string  loaisach = comboxLoaiSach.SelectedValue.ToString();
+            this.dataGridView1 .DataSource = SachBUS.SelectSachByLoaiSach(loaisach);
+         }
+
         private string taoMaTuDong()
         {
             string str = "";
@@ -67,7 +75,7 @@ namespace Presentation
             if (result == true)
             {
                 MessageBox.Show("Insert Book have finish!", "Insert", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //this.ShowMaster();
+                this.ShowMaster();
             }
             else
             {
@@ -78,17 +86,17 @@ namespace Presentation
 
         private void frmSach_Load(object sender, EventArgs e)
         {
-         //   this.comboMaSach.ValueMember = "Ma";
-          //  this.comboMaSach.DisplayMember = "Ma";
-           // this.comboMaSach.DataSource = SachBUS.SelectSachAll();
+            
             this.comboxLoaiSach.ValueMember = "Ma";
             this.comboxLoaiSach.DisplayMember = "Ten";
             this.comboxLoaiSach.DataSource = LoaiSachBUS.SelectLoaiSachAll();
+            
             this.comboxNgonNgu.ValueMember = "Ma";
             this.comboxNgonNgu.DisplayMember = "Ten";
             this.comboxNgonNgu.DataSource = NgonNguBus.SelectNgonNguAll();
-
+            //this.comboxLoaiSach.SelectedIndex = 1;
             this.txtSoLuong.Text = Convert.ToString(dem_SoLuongSach());
+            this.ShowMaster ();
         }
 
         private void buttonThoat_Click(object sender, EventArgs e)
@@ -246,14 +254,14 @@ namespace Presentation
 
            MuonSachDTO muonSachDTo = new MuonSachDTO();
        //    muonSachDTo = MuonSachBUS.SelectedMuonSach_byMaSach (sachDTO.Ma);
-           muonSachDTo = MuonSachBUS.SelectedMuonSach_byMaSach(sachDTO .Ma );//////
-           if (muonSachDTo.MaSach  != "")// Xoa duoc or chua
+           bool maS = MuonSachBUS.CheckMuonSachByMaSach(sachDTO.Ma);//////
+           if (maS == true)// Xoa duoc or chua
            {
-               
+
                SachMuonDTO sachMuonDTO = new SachMuonDTO();
 
-               bool kq_sm = SachMuonBUS.CheckedSachMuonByID (muonSachDTo.MaMuonSach );
-               if (kq_sm   == false ) //xoa duoc
+               bool kq_sm = SachMuonBUS.CheckedSachMuonByID(muonSachDTo.MaMuonSach);
+               if (kq_sm == false) //xoa duoc
                {
                    //kt denbu            
 
@@ -265,10 +273,10 @@ namespace Presentation
                        {
                            denBuDTO = DenBuBUS.SelectDenBuByMa(muonSachDTo.MaMuonSach);
                            bool rs_db = DenBuBUS.DeleteDenBuByID(denBuDTO.Mamuonsach);
-                          // if (rs_db == false)
-                          // {
-                             //  MessageBox.Show("Delete MaSach trong DenBu ko duoc!");
-                          // }
+                           // if (rs_db == false)
+                           // {
+                           //  MessageBox.Show("Delete MaSach trong DenBu ko duoc!");
+                           // }
                        }
                        //kt Phat
 
@@ -289,7 +297,7 @@ namespace Presentation
                    {
                        MessageBox.Show("Delete MaSach trong MuonSach ko duoc!");
                    }
-                    
+
                    //xoa sachMat
                    SachMatDto sachMatDTO = new SachMatDto();
                    sachMatDTO = SachMatBus.SelectSachMatByID(sachDTO.Ma);
@@ -303,7 +311,7 @@ namespace Presentation
 
                    }
                    SachHongDTO sachHongDTO = new SachHongDTO();
-                   sachHongDTO = SachHongBUS.SelectSachHongByID (sachDTO.Ma);
+                   sachHongDTO = SachHongBUS.SelectSachHongByID(sachDTO.Ma);
                    if (sachHongDTO.MaSach != "")
                    {
                        bool rs_sh = SachHongBUS.DeleteSachHongByID(sachHongDTO.MaSach);
@@ -321,6 +329,7 @@ namespace Presentation
                        if (kq == true)
                        {
                            MessageBox.Show("Delete Successful!", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                           this.ShowMaster();
                        }
                        else
                        {
@@ -331,7 +340,26 @@ namespace Presentation
                }
                else
                {
-                   MessageBox.Show ("MaSach nay co nguoi dang muon, ko the xoa!");
+                   MessageBox.Show("MaSach nay co nguoi dang muon, ko the xoa!");
+               }
+           }
+           else
+           {
+               DialogResult rs = MessageBox.Show("Do you want to delete MaSach?" + sachDTO.Ma + "?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+               // DialogResult dr = MessageBox.Show("Do you want to delete EmployeeID " + employeeID + "?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+               if (rs == DialogResult.Yes)
+               {
+                   bool kq = SachBUS.DeleteSachByMa(sachDTO.Ma);
+                   
+                   if (kq == true)
+                   {
+                       MessageBox.Show("Delete Successful!", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       this.ShowMaster();
+                   }
+                   else
+                   {
+                       MessageBox.Show("Fail in delete!");
+                   }
                }
            }
 
@@ -382,6 +410,52 @@ namespace Presentation
             else
                 MessageBox.Show("Fail, ma sach ko ton tai!");
         }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (this .dataGridView1.CurrentRow  != null )
+            {
+               this .txtMaSachInsert.Text = this.dataGridView1 .CurrentRow.Cells ["Ma"].Value .ToString ();
+               this .txtNhanDe .Text =this.dataGridView1 .CurrentRow .Cells ["Ten"].Value .ToString ();
+               this.txtGiaSach.Text = this.dataGridView1.CurrentRow.Cells["Gia"].Value.ToString();
+               this.txtTacGia.Text = this.dataGridView1.CurrentRow.Cells["TacGia"].Value.ToString();
+               this.comboxLoaiSach.Text = this.dataGridView1.CurrentRow.Cells["LoaiSach"].Value.ToString();
+               this.comboxNgonNgu .Text = this.dataGridView1.CurrentRow.Cells["NgonNgu"].Value.ToString();
+               this.txtTenNhaXB.Text = this.dataGridView1.CurrentRow.Cells["NhaXB"].Value.ToString();
+            }
+
+        }
+
+        private void comboxLoaiSach_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //this.ShowMaster();
+        }
+
+        private void txtMaSachInsert_Click(object sender, EventArgs e)
+        {
+            this.txtMaSachInsert.Text = "";
+        }
+
+        private void txtNhanDe_Click(object sender, EventArgs e)
+        {
+            this.txtNhanDe.Text = "";
+        }
+
+        private void txtTenNhaXB_Click(object sender, EventArgs e)
+        {
+            this.txtTenNhaXB.Text = "";
+        }
+
+        private void txtTacGia_Click(object sender, EventArgs e)
+        {
+            this.txtTacGia.Text = "";
+        }
+
+        private void txtGiaSach_Click(object sender, EventArgs e)
+        {
+            this.txtGiaSach.Text = "";
+        }
+        
 
        
     }

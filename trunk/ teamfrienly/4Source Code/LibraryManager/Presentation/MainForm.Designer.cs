@@ -42,6 +42,7 @@
             this.thôngTinTácGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinTácGiảToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tacGiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -162,11 +163,21 @@
             // 
             // thôngTinTácGiảToolStripMenuItem1
             // 
+            this.thôngTinTácGiảToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tacGiaToolStripMenuItem});
             this.thôngTinTácGiảToolStripMenuItem1.Image = global::Presentation.Properties.Resources.dagron;
             this.thôngTinTácGiảToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.thôngTinTácGiảToolStripMenuItem1.Name = "thôngTinTácGiảToolStripMenuItem1";
             this.thôngTinTácGiảToolStripMenuItem1.Size = new System.Drawing.Size(148, 36);
             this.thôngTinTácGiảToolStripMenuItem1.Text = "Thông Tin Tác Giả";
+            // 
+            // tacGiaToolStripMenuItem
+            // 
+            this.tacGiaToolStripMenuItem.Image = global::Presentation.Properties.Resources.Options;
+            this.tacGiaToolStripMenuItem.Name = "tacGiaToolStripMenuItem";
+            this.tacGiaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tacGiaToolStripMenuItem.Text = "TacGia";
+            this.tacGiaToolStripMenuItem.Click += new System.EventHandler(this.tacGiaToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -206,5 +217,6 @@
         private System.Windows.Forms.ToolStripMenuItem thôngTinTácGiảToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tacGiaToolStripMenuItem;
     }
 }
