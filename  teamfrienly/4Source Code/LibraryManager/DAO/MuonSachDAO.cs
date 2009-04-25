@@ -162,6 +162,27 @@ namespace DAO
             }
             return result;
         }
+        public static bool CheckMuonSachByMaSach(string  maMuonSach)//masach
+        {
+            bool result = false;
+            try
+            {
+                // Create List Sql Parameter
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                sqlParams.Add(new SqlParameter("@MaSach", maMuonSach));
+
+                DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectMuonSach_MaSach", sqlParams);
+                if (dt.Rows.Count == 1)
+                {
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return result;
+        }
         public static MuonSachDTO  LayPhieuMuonSach_byMaSach(String maSach)
         {
             MuonSachDTO ms = new MuonSachDTO();

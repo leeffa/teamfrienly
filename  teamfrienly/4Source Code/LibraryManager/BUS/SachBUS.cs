@@ -50,6 +50,17 @@ namespace BUS
             }
             return SachDAO.SelectSach_Ma (maS);
         }
+
+        public static List<SachDTO> SelectSachByLoaiSach(string maS)
+        {
+            if (SachDAO.CheckSachByLoaiSach(maS))
+            {
+                return SachDAO.SelectSachByLoaiSach(maS);
+            }
+            
+            return null;
+        }
+       
         public static String KiemTraSach(String maSach)
         {
             return SachDAO.KiemTraSach(maSach);

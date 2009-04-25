@@ -60,6 +60,10 @@ namespace BUS
             return MuonSachDAO.SelectMuonSach_MaSach(maSach);
            
         }
+        public static bool CheckMuonSachByMaSach(string maSach)
+        {
+            return MuonSachDAO.CheckMuonSachByMaSach(maSach);
 
+        }
     }
 }

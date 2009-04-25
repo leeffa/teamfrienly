@@ -92,6 +92,19 @@ namespace Presentation
             frm.Show();
         }
 
+        private void tacGiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name.Equals("TacGia"))
+                    form.Close();
+            }
+            TacGia frm = new TacGia();
+            frm.MdiParent = this;
+
+            frm.Show();
+        }
+
      
     }
 }

@@ -54,3 +54,10 @@ C:\Users\thongoc\Desktop\Moi\DAO\bin\Debug\DTO.pdb
 C:\Users\thongoc\Desktop\Moi\DAO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\thongoc\Desktop\Moi\DAO\obj\Debug\DAO.dll
 C:\Users\thongoc\Desktop\Moi\DAO\obj\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\LibraryManager\DAO\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\LibraryManager\DAO\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\LibraryManager\DAO\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\LibraryManager\DAO\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\LibraryManager\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\LibraryManager\DAO\obj\Debug\DAO.dll
+C:\Users\thongoc\Desktop\LibraryManager\DAO\obj\Debug\DAO.pdb
