@@ -28,19 +28,66 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBaoCaoTinhHinhMuonSachTheoLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoTinhHinhMuonSachTheoLoaiSach.Designer.cs">
+      <DependentUpon>frmBaoCaoTinhHinhMuonSachTheoLoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoTinhHinhSachHong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoTinhHinhSachHong.Designer.cs">
+      <DependentUpon>frmBaoCaoTinhHinhSachHong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoTinhHinhSachMat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoTinhHinhSachMat.Designer.cs">
+      <DependentUpon>frmBaoCaoTinhHinhSachMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.Designer.cs">
+      <DependentUpon>frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSach.designer.cs">
       <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNhaXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNhaXB.designer.cs">
+      <DependentUpon>frmThemNhaXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemTacGia.designer.cs">
+      <DependentUpon>frmThemTacGia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTraCuuSach.cs">
       <SubType>Form</SubType>
@@ -68,12 +115,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBaoCaoTinhHinhMuonSachTheoLoaiSach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaoCaoTinhHinhMuonSachTheoLoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoTinhHinhSachHong.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaoCaoTinhHinhSachHong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoTinhHinhSachMat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaoCaoTinhHinhSachMat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMuonSach.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmMuonSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSach.resx">
       <DependentUpon>frmSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNhaXB.resx">
+      <DependentUpon>frmThemNhaXB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemTacGia.resx">
+      <DependentUpon>frmThemTacGia.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTraCuuSach.resx">
@@ -92,6 +163,22 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTinhHinhMuonSachTheoLoaiSach.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTinhHinhMuonSachTheoLoaiSach.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTinhHinhMuonSachTheoLoaiTheDocGia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTinhHinhMuonSachTheoLoaiTheDocGia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTinhHinhSachHong.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTinhHinhSachHong.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTinhHinhSachMat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTinhHinhSachMat.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="TacGia.resx">
       <SubType>Designer</SubType>
@@ -114,6 +201,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rptTinhHinhMuonSachTheoLoaiSach.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTinhHinhMuonSachTheoLoaiSach.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptTinhHinhMuonSachTheoLoaiTheDocGia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTinhHinhMuonSachTheoLoaiTheDocGia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptTinhHinhSachHong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTinhHinhSachHong.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptTinhHinhSachMat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTinhHinhSachMat.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="TacGia.cs">
       <SubType>Form</SubType>
@@ -143,7 +254,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ConnectionString.xml" />
     <None Include="picture\bok.jpg" />
     <None Include="picture\images.jpg" />
     <None Include="picture\1.jpg" />
@@ -163,6 +273,12 @@
     <None Include="picture\My Documents.ico" />
     <None Include="picture\nen.jpg" />
     <None Include="picture\ttsach.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConnectionString.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

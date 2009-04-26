@@ -50,13 +50,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -87,9 +87,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(21, 126);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(784, 254);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -99,7 +99,7 @@
             // 
             this.checkBox_ngaysinh.AutoSize = true;
             this.checkBox_ngaysinh.Location = new System.Drawing.Point(45, 111);
-            this.checkBox_ngaysinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_ngaysinh.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_ngaysinh.Name = "checkBox_ngaysinh";
             this.checkBox_ngaysinh.Size = new System.Drawing.Size(219, 21);
             this.checkBox_ngaysinh.TabIndex = 7;
@@ -111,7 +111,7 @@
             // 
             this.checkBox_ngayhethan.AutoSize = true;
             this.checkBox_ngayhethan.Location = new System.Drawing.Point(46, 202);
-            this.checkBox_ngayhethan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_ngayhethan.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_ngayhethan.Name = "checkBox_ngayhethan";
             this.checkBox_ngayhethan.Size = new System.Drawing.Size(244, 21);
             this.checkBox_ngayhethan.TabIndex = 6;
@@ -123,7 +123,7 @@
             // 
             this.dateTimePicker_sinhden.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_sinhden.Location = new System.Drawing.Point(534, 105);
-            this.dateTimePicker_sinhden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker_sinhden.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_sinhden.Name = "dateTimePicker_sinhden";
             this.dateTimePicker_sinhden.Size = new System.Drawing.Size(131, 23);
             this.dateTimePicker_sinhden.TabIndex = 5;
@@ -132,7 +132,7 @@
             // 
             this.dateTimePicker_sinhtu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_sinhtu.Location = new System.Drawing.Point(320, 107);
-            this.dateTimePicker_sinhtu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker_sinhtu.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_sinhtu.Name = "dateTimePicker_sinhtu";
             this.dateTimePicker_sinhtu.Size = new System.Drawing.Size(131, 23);
             this.dateTimePicker_sinhtu.TabIndex = 5;
@@ -141,7 +141,7 @@
             // 
             this.dateTimePicker_capden.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_capden.Location = new System.Drawing.Point(534, 155);
-            this.dateTimePicker_capden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker_capden.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_capden.Name = "dateTimePicker_capden";
             this.dateTimePicker_capden.Size = new System.Drawing.Size(131, 23);
             this.dateTimePicker_capden.TabIndex = 5;
@@ -150,7 +150,7 @@
             // 
             this.dateTimePicker_hetden.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_hetden.Location = new System.Drawing.Point(534, 200);
-            this.dateTimePicker_hetden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker_hetden.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_hetden.Name = "dateTimePicker_hetden";
             this.dateTimePicker_hetden.Size = new System.Drawing.Size(131, 23);
             this.dateTimePicker_hetden.TabIndex = 5;
@@ -159,7 +159,7 @@
             // 
             this.dateTimePicker_hettu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_hettu.Location = new System.Drawing.Point(320, 200);
-            this.dateTimePicker_hettu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker_hettu.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_hettu.Name = "dateTimePicker_hettu";
             this.dateTimePicker_hettu.Size = new System.Drawing.Size(131, 23);
             this.dateTimePicker_hettu.TabIndex = 5;
@@ -168,7 +168,7 @@
             // 
             this.dateTimePicker_captu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_captu.Location = new System.Drawing.Point(320, 157);
-            this.dateTimePicker_captu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker_captu.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_captu.Name = "dateTimePicker_captu";
             this.dateTimePicker_captu.Size = new System.Drawing.Size(131, 23);
             this.dateTimePicker_captu.TabIndex = 5;
@@ -177,7 +177,7 @@
             // 
             this.checkBox_ngaycap.AutoSize = true;
             this.checkBox_ngaycap.Location = new System.Drawing.Point(46, 155);
-            this.checkBox_ngaycap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_ngaycap.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_ngaycap.Name = "checkBox_ngaycap";
             this.checkBox_ngaycap.Size = new System.Drawing.Size(215, 21);
             this.checkBox_ngaycap.TabIndex = 4;
@@ -189,7 +189,7 @@
             // 
             this.comboBox_loaithe.FormattingEnabled = true;
             this.comboBox_loaithe.Location = new System.Drawing.Point(152, 66);
-            this.comboBox_loaithe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox_loaithe.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_loaithe.Name = "comboBox_loaithe";
             this.comboBox_loaithe.Size = new System.Drawing.Size(170, 24);
             this.comboBox_loaithe.TabIndex = 3;
@@ -198,7 +198,7 @@
             // 
             this.checkBox_loaithe.AutoSize = true;
             this.checkBox_loaithe.Location = new System.Drawing.Point(46, 69);
-            this.checkBox_loaithe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_loaithe.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_loaithe.Name = "checkBox_loaithe";
             this.checkBox_loaithe.Size = new System.Drawing.Size(86, 21);
             this.checkBox_loaithe.TabIndex = 2;
@@ -209,7 +209,7 @@
             // textBox_Ten
             // 
             this.textBox_Ten.Location = new System.Drawing.Point(458, 27);
-            this.textBox_Ten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Ten.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Ten.Name = "textBox_Ten";
             this.textBox_Ten.Size = new System.Drawing.Size(210, 23);
             this.textBox_Ten.TabIndex = 1;
@@ -217,7 +217,7 @@
             // textBox_Ma
             // 
             this.textBox_Ma.Location = new System.Drawing.Point(153, 29);
-            this.textBox_Ma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Ma.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Ma.Name = "textBox_Ma";
             this.textBox_Ma.Size = new System.Drawing.Size(170, 23);
             this.textBox_Ma.TabIndex = 1;
@@ -280,9 +280,9 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.ForeColor = System.Drawing.Color.Crimson;
             this.groupBox2.Location = new System.Drawing.Point(13, 437);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(792, 178);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -300,23 +300,10 @@
             this.Column5,
             this.Column6});
             this.dataGridView1.Location = new System.Drawing.Point(8, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(799, 143);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(641, 391);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tra cứu";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Column1
             // 
@@ -357,6 +344,19 @@
             this.Column6.HeaderText = "Ngày sinh";
             this.Column6.Name = "Column6";
             this.Column6.Width = 140;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.ForeColor = System.Drawing.Color.Firebrick;
+            this.button1.Location = new System.Drawing.Point(641, 391);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 38);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Tra cứu";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -408,10 +408,11 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTraCuuThe";
-            this.Text = "Tra cứu thẻ";
+            this.Text = "Tra Cứu Thẻ Sách";
             this.Load += new System.EventHandler(this.frmTraCuuThe_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
