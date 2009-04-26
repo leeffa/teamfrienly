@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
 using DTO;
 using DAO;
 namespace BUS
@@ -42,5 +43,10 @@ namespace BUS
         {
             return LoaiTheDAO.SelectLoaiTheByID(ma);
         }
+        public static DataTable SelectLoaiThe()
+        {
+            return LoaiTheDAO.SelectLoaiThe();
+        }
+
     }
 }

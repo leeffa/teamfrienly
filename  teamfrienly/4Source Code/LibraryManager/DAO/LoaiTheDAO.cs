@@ -137,6 +137,20 @@ namespace DAO
            }
            return temp;
        }
+       public static DataTable SelectLoaiThe()
+       {
+           try
+           {
+               DataTable dt = SqlDataAccessHelper.ExecuteQuery("spSelectLoaiTheAll");
+               return dt;
+
+           }
+           catch (Exception ex)
+           {
+               throw ex;
+           }
+
+       }
 
     }
 
