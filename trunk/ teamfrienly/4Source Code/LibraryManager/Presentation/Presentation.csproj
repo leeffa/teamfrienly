@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Presentation</RootNamespace>
-    <AssemblyName>Presentation</AssemblyName>
+    <AssemblyName>LibraryManager</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSach.Designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBaoCaoTinhHinhMuonSachTheoLoaiSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +77,29 @@
     <Compile Include="frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.Designer.cs">
       <DependentUpon>frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSach.cs">
+    <Compile Include="frmLoaiThe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSach.designer.cs">
-      <DependentUpon>frmSach.cs</DependentUpon>
+    <Compile Include="frmLoaiThe.designer.cs">
+      <DependentUpon>frmLoaiThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatSach.Designer.cs">
+      <DependentUpon>frmMatSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuonSach.Designer.cs">
+      <DependentUpon>frmMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThe.Designer.cs">
+      <DependentUpon>frmThe.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThemNhaXB.cs">
       <SubType>Form</SubType>
@@ -98,7 +122,7 @@
     <Compile Include="frmTraCuuThe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTraCuuThe.designer.cs">
+    <Compile Include="frmTraCuuThe.Designer.cs">
       <DependentUpon>frmTraCuuThe.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -107,14 +131,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMuonSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMuonSach.Designer.cs">
-      <DependentUpon>frmMuonSach.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmSach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBaoCaoTinhHinhMuonSachTheoLoaiSach.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmBaoCaoTinhHinhMuonSachTheoLoaiSach.cs</DependentUpon>
@@ -131,13 +153,21 @@
       <SubType>Designer</SubType>
       <DependentUpon>frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiThe.resx">
+      <DependentUpon>frmLoaiThe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatSach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMatSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMuonSach.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmMuonSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSach.resx">
-      <DependentUpon>frmSach.cs</DependentUpon>
+    <EmbeddedResource Include="frmThe.resx">
       <SubType>Designer</SubType>
+      <DependentUpon>frmThe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemNhaXB.resx">
       <DependentUpon>frmThemNhaXB.cs</DependentUpon>
@@ -152,8 +182,8 @@
       <DependentUpon>frmTraCuuSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTraCuuThe.resx">
-      <DependentUpon>frmTraCuuThe.cs</DependentUpon>
       <SubType>Designer</SubType>
+      <DependentUpon>frmTraCuuThe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <SubType>Designer</SubType>
@@ -183,10 +213,6 @@
     <EmbeddedResource Include="TacGia.resx">
       <SubType>Designer</SubType>
       <DependentUpon>TacGia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TheForm.resx">
-      <DependentUpon>TheForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -232,12 +258,6 @@
     <Compile Include="TacGia.Designer.cs">
       <DependentUpon>TacGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="TheForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TheForm.designer.cs">
-      <DependentUpon>TheForm.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
@@ -278,7 +298,9 @@
     <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ConnectionString.xml" />
+    <Content Include="ConnectionString.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
