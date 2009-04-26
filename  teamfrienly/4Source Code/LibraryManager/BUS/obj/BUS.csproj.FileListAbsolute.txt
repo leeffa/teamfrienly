@@ -79,3 +79,12 @@ C:\Users\thongoc\Desktop\LibraryManager\BUS\bin\Debug\DAO.pdb
 C:\Users\thongoc\Desktop\LibraryManager\BUS\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\thongoc\Desktop\LibraryManager\BUS\obj\Debug\BUS.dll
 C:\Users\thongoc\Desktop\LibraryManager\BUS\obj\Debug\BUS.pdb
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\bin\Debug\BUS.dll
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\bin\Debug\BUS.pdb
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\obj\Debug\BUS.dll
+C:\Users\thongoc\Desktop\New Folder (5)\New Folder (5)\LibraryManager\BUS\obj\Debug\BUS.pdb
