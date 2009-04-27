@@ -5,14 +5,14 @@
 	<property name="project.rootdirectory" value="." />
 	<property name="WorkingDir" value="." />
 	<property name="solution.dir" value="${WorkingDir}\ teamfrienly\4Source Code\LibraryManager" />
-	<property name="solution.file" value="${solution.dir}/LibraryManage.sln" />
-	<property name="project.dir" value="${WorkingDir}/ teamfrienly\4SourceCode\LibraryManager" />
-	<property name="build.configuration" value="debug" />
+	<property name="solution.file" value="${solution.dir}\LibraryManage.sln" />
+	<property name="Release.dir" value="${WorkingDir}/ teamfrienly\4Source Code\LibraryManager\Presentation\bin\Release" />
+	<property name="build.configuration" value="release" />
 	<property name="SVN_ADDR" value="https://teamfrienly.googlecode.com/svn/trunk/" />
 	<property name="SVN_DIR" value="." />
 	<!-- Name: 'DataBase.dir' Value: ' teamfrienly/5Database/' -->
 	<property name="DataBase.dir" value="./ teamfrienly/5Database/" />
-	<target name="go" description="The main target for full build process execution." depends="CreateDatabase, test" />
+	<target name="go" description="The main target for full build process execution." depends="CopyDatabase,test" />
 	<target name="clean" description="Clean up the build environment.">
 		<echo message="Xoa day" />
 		<delete dir="${solution.dir}\DAO\bin" />
@@ -33,28 +33,34 @@
 	</target>
 	<target name="version" description="Apply versioning to the source code.">
 		<!--Enter tasks for version target-->
-		<echo message="${fileversioninfo::get-file-version()}"/>
+		<!--<echo message="${fileversioninfo::get-file-version()}"/> -->
 	</target>
 	<target name="build" description="Compile the application.">
 		<!-- Enter tasks for build target -->
 		<exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" workingdir="${solution.dir}" />
 	</target>
 	<target name="CreateDatabase">
-		<copy file="${DataBase.dir}/createDB.sql" todir="${WorkingDir}"></copy>
-		<copy file="${DataBase.dir}/createTable.sql" todir="${WorkingDir}"></copy>		
-		<copy file="${DataBase.dir}/CreateSP.sql" todir="${WorkingDir}"></copy>		
-		<copy file="${DataBase.dir}/InsertDB.sql" todir="${WorkingDir}"></copy>		
-		
+		<copy file="${DataBase.dir}/createDB.sql" todir="${WorkingDir}" />
+		<copy file="${DataBase.dir}/createTable.sql" todir="${WorkingDir}" />
+		<copy file="${DataBase.dir}/CreateSP.sql" todir="${WorkingDir}" />
+		<copy file="${DataBase.dir}/InsertDB.sql" todir="${WorkingDir}" />
 		<exec program="sqlcmd.exe" commandline="-E -S  ${environment::get-machine-name()}\SQLEXPRESS -i createDB.sql " />
 		<exec program="sqlcmd.exe" commandline="-E -S ${environment::get-machine-name()}\SQLEXPRESS -i createTable.sql " />
 		<exec program="sqlcmd.exe" commandline="-E -S ${environment::get-machine-name()}\SQLEXPRESS -i CreateSP.sql " />
-		<exec program="sqlcmd.exe" commandline="-E -S ${environment::get-machine-name()}\SQLEXPRESS -i InsertDB.sql"/>
-		
-		<delete file="createDB.sql"></delete>
-		<delete file="createTable.sql"></delete>		
-		<delete file="CreateSP.sql"></delete>		
-		<delete file="InsertDB.sql"></delete>		
-		
+		<exec program="sqlcmd.exe" commandline="-E -S ${environment::get-machine-name()}\SQLEXPRESS -i InsertDB.sql" />
+		<delete file="createDB.sql" />
+		<delete file="createTable.sql" />
+		<delete file="CreateSP.sql" />
+		<delete file="InsertDB.sql" />
+	</target>
+	<target name="CopyDatabase">
+		<copy file="${DataBase.dir}/QLTV_teamfriendly.mdf" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${DataBase.dir}/QLTV_teamfriendly_log.ldf" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${Release.dir}/LibraryManager.exe" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${Release.dir}/BUS.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${Release.dir}/DAO.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${Release.dir}/DTO.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${Release.dir}/ConnectionString.xml" todir="${WorkingDir}\ teamfrienly\8Release" />
 	</target>
 	<target name="test" description="Apply the unit tests.">
 		<!--Enter tasks for test target-->
