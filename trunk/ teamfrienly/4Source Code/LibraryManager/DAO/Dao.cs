@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Xml;
 namespace DAO
 {
     public class Dao
@@ -38,6 +39,27 @@ namespace DAO
                 throw ex;
             }
             return dt;
+        }
+        public static bool ConnectedToServer(String strConn)
+        {
+            try
+            {
+                if (strConn == "")
+                {
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load("ConnectionString.xml");
+                    XmlElement root = doc.DocumentElement;
+                    strConn= root.InnerText;                    
+                }
+                SqlConnection connect = new SqlConnection(strConn);
+                connect.Open();
+                connect.Close();
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                return false;
+            }
         }
 
     }

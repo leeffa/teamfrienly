@@ -17,5 +17,9 @@ namespace BUS
       {
           return Dao.LayDS_SachDangMuon_byDocGiaID(ID);
       }
+        public static bool ConnectedToServer(String strConn)
+        {
+            return Dao.ConnectedToServer(strConn);
+        }
     }
 }

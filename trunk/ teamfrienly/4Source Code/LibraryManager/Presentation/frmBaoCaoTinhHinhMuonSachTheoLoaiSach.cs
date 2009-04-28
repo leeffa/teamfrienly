@@ -52,7 +52,8 @@ namespace Presentation
                 //tliCurrent.ConnectionInfo.ServerName=
                 //tliCurrent.ConnectionInfo.UserID = "sa";
                 //tliCurrent.ConnectionInfo.Password = "311967556";
-                tliCurrent.ConnectionInfo.IntegratedSecurity = true;
+                tliCurrent.ConnectionInfo.IntegratedSecurity = true;              
+
                 tliCurrent.ConnectionInfo.DatabaseName = dbnamestring;
                 tbCurrent.ApplyLogOnInfo(tliCurrent);
             }

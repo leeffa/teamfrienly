@@ -22,5 +22,16 @@ namespace Presentation.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\QLTV_teamfriendly.mdf;I" +
+            "ntegrated Security=True;User Instance=True")]
+        public string QLTV_teamfriendlyConnectionString {
+            get {
+                return ((string)(this["QLTV_teamfriendlyConnectionString"]));
+            }
+        }
     }
 }

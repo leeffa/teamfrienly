@@ -27,6 +27,7 @@ namespace DAO
                 XmlElement root = doc.DocumentElement;
                 String connectionString = root.InnerText;
                 return connectionString;
+
             }
             catch (Exception ex)
             {
@@ -62,6 +63,7 @@ namespace DAO
 
                 catch (SqlException ex)
                 {
+                   
                     throw ex;
                 }
                 finally
@@ -222,6 +224,6 @@ namespace DAO
             return ExecuteScalar(spName, null);
         }
         #endregion
-
+   
     }
 }

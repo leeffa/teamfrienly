@@ -6,13 +6,13 @@
 	<property name="WorkingDir" value="." />
 	<property name="solution.dir" value="${WorkingDir}\ teamfrienly\4Source Code\LibraryManager" />
 	<property name="solution.file" value="${solution.dir}\LibraryManage.sln" />
-	<property name="Release.dir" value="${WorkingDir}/ teamfrienly\4Source Code\LibraryManager\Presentation\bin\Release" />
+	<property name="Release.dir" value="${WorkingDir}/ teamfrienly\4Source Code\LibraryManager\Presentation\bin\debug" />
 	<property name="build.configuration" value="release" />
 	<property name="SVN_ADDR" value="https://teamfrienly.googlecode.com/svn/trunk/" />
 	<property name="SVN_DIR" value="." />
 	<!-- Name: 'DataBase.dir' Value: ' teamfrienly/5Database/' -->
 	<property name="DataBase.dir" value="./ teamfrienly/5Database/" />
-	<target name="go" description="The main target for full build process execution." depends="CopyDatabase,test" />
+	<target name="go" description="The main target for full build process execution." depends="clean,get,build,CreateDatabase,Release,test" />
 	<target name="clean" description="Clean up the build environment.">
 		<echo message="Xoa day" />
 		<delete dir="${solution.dir}\DAO\bin" />
@@ -53,14 +53,17 @@
 		<delete file="CreateSP.sql" />
 		<delete file="InsertDB.sql" />
 	</target>
-	<target name="CopyDatabase">
-		<copy file="${DataBase.dir}/QLTV_teamfriendly.mdf" todir="${WorkingDir}\ teamfrienly\8Release" />
-		<copy file="${DataBase.dir}/QLTV_teamfriendly_log.ldf" todir="${WorkingDir}\ teamfrienly\8Release" />
+	<target name="Release">
+		<copy file="${DataBase.dir}/CreateDB.sql" todir="${WorkingDir}\ teamfrienly\8Release\database" />
+		<copy file="${DataBase.dir}/CreateTable.sql" todir="${WorkingDir}\ teamfrienly\8Release\database" />
+		<copy file="${DataBase.dir}/CreateSP.sql" todir="${WorkingDir}\ teamfrienly\8Release\database" />
+		<copy file="${DataBase.dir}/InsertDB.sql" todir="${WorkingDir}\ teamfrienly\8Release\database" />
 		<copy file="${Release.dir}/LibraryManager.exe" todir="${WorkingDir}\ teamfrienly\8Release" />
 		<copy file="${Release.dir}/BUS.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
 		<copy file="${Release.dir}/DAO.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
 		<copy file="${Release.dir}/DTO.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
 		<copy file="${Release.dir}/ConnectionString.xml" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${Release.dir}/Help_ManagerLibrary.chm" todir="${WorkingDir}\ teamfrienly\8Release" />
 	</target>
 	<target name="test" description="Apply the unit tests.">
 		<!--Enter tasks for test target-->
