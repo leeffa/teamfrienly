@@ -12,7 +12,7 @@
 	<property name="SVN_DIR" value="." />
 	<!-- Name: 'DataBase.dir' Value: ' teamfrienly/5Database/' -->
 	<property name="DataBase.dir" value="./ teamfrienly/5Database/" />
-	<target name="go" description="The main target for full build process execution." depends="clean,get,build,CreateDatabase,Release,test" />
+	<target name="go" description="The main target for full build process execution." depends="get,clean,build,CreateDatabase,Release,test" />
 	<target name="clean" description="Clean up the build environment.">
 		<echo message="Xoa day" />
 		<delete dir="${solution.dir}\DAO\bin" />
@@ -63,7 +63,7 @@
 		<copy file="${Release.dir}/DAO.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
 		<copy file="${Release.dir}/DTO.dll" todir="${WorkingDir}\ teamfrienly\8Release" />
 		<copy file="${Release.dir}/ConnectionString.xml" todir="${WorkingDir}\ teamfrienly\8Release" />
-		<copy file="${Release.dir}/Help_ManagerLibrary.chm" todir="${WorkingDir}\ teamfrienly\8Release" />
+		<copy file="${Release.dir}/help/Help_ManagerLibrary.chm" todir="${WorkingDir}\ teamfrienly\8Release\help" />
 	</target>
 	<target name="test" description="Apply the unit tests.">
 		<!--Enter tasks for test target-->

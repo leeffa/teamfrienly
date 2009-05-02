@@ -310,6 +310,9 @@
     <None Include="database\insertDB.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="help\Help_ManagerLibrary.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="picture\bok.jpg" />
     <None Include="picture\images.jpg" />
     <None Include="picture\1.jpg" />
