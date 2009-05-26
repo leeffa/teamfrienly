@@ -1,0 +1,32 @@
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\ResolveAssemblyReference.cache
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\Presentation.exe
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\Presentation.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\BUS.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\DTO.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\BUS.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\DTO.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.exe
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\DAO.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\DAO.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.MainForm.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.frmStudent.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmSubjects.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmStipulation.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmClass.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmListClass.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmStudentMark.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmStudentList.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmStudentSearch.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\bin\Debug\Presentation.exe.config
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.ReportSubject.rpt
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmData.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmReport.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.ReportSemester.rpt
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmReportSemester.resources
+D:\Year 3 of 2008_HKII\CNPM_khang\Bai lam nop rui\Version_1(CDL_hoanthanh_basic)\Presentation\Presentation\bin\Debug\Presentation.exe.config
+D:\Year 3 of 2008_HKII\CNPM_khang\Bai lam nop rui\Version_1(CDL_hoanthanh_basic)\Presentation\Presentation\obj\Debug\Presentation.exe
+D:\Year 3 of 2008_HKII\CNPM_khang\Bai lam nop rui\Version_1(CDL_hoanthanh_basic)\Presentation\Presentation\obj\Debug\Presentation.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\Presentation\obj\Debug\Presentation.FrmAuthor.resources

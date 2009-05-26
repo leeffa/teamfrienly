@@ -1,0 +1,283 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6068578A-F378-4CC6-B2F2-C25BBB7AB804}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuthor.Designer.cs">
+      <DependentUpon>FrmAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClass.Designer.cs">
+      <DependentUpon>FrmClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListClass.Designer.cs">
+      <DependentUpon>FrmListClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmData.Designer.cs">
+      <DependentUpon>FrmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportSemester.Designer.cs">
+      <DependentUpon>FrmReportSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStipulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStipulation.Designer.cs">
+      <DependentUpon>FrmStipulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudent.Designer.cs">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentList.Designer.cs">
+      <DependentUpon>FrmStudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentMark.Designer.cs">
+      <DependentUpon>FrmStudentMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentSearch.Designer.cs">
+      <DependentUpon>FrmStudentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubjects.Designer.cs">
+      <DependentUpon>FrmSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAuthor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListClass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmListClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportSemester.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStipulation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStipulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentMark.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStudentMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStudentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubjects.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSemester.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSemester.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSubject.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSubject.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QLHSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSemester.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSemester.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportSubject.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSubject.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{AAF640E1-2E16-4F63-8215-DCB2A693CC0A}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{05D31F74-202A-4999-A8C0-ABDBA49AE015}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{7D1A634A-C97C-45DC-9C13-FB354D5CBD26}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Pictures\Options.png" />
+    <None Include="Pictures\RumaxIP Icon 96.ico" />
+    <None Include="QLHSDataSet.xsc">
+      <DependentUpon>QLHSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLHSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLHSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLHSDataSet.xss">
+      <DependentUpon>QLHSDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConnectionString.xml" />
+    <None Include="Pictures\subject.jpg" />
+    <None Include="Pictures\Shutdown.ico" />
+    <None Include="Pictures\abc.jpg" />
+    <None Include="Pictures\Untitled.jpg" />
+    <None Include="Pictures\RumaxIP Icon 98.ico" />
+    <None Include="Pictures\1.bmp" />
+    <None Include="Pictures\die.jpg" />
+    <None Include="Pictures\d.jpg" />
+    <None Include="Pictures\tux-teacher-2_overlord59-tux.ico" />
+    <None Include="Pictures\01 %2832%29.ico" />
+    <None Include="Pictures\dagron.ico" />
+    <None Include="Pictures\My Documents.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

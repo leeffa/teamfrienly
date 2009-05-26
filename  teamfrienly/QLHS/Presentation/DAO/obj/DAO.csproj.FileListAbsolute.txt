@@ -1,0 +1,7 @@
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DAO\bin\Debug\DAO.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DAO\bin\Debug\DAO.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DAO\bin\Debug\DTO.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DAO\bin\Debug\DTO.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DAO\obj\Debug\ResolveAssemblyReference.cache
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DAO\obj\Debug\DAO.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DAO\obj\Debug\DAO.pdb

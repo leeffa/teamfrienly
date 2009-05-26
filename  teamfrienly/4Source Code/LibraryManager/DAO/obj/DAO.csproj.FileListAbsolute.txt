@@ -75,3 +75,10 @@ C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\DAO\bin\Debu
 C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\DAO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\DAO\obj\Debug\DAO.dll
 C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\DAO\obj\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\DAO\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\DAO\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\DAO\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\DAO\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\DAO\obj\Debug\DAO.dll
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\DAO\obj\Debug\DAO.pdb

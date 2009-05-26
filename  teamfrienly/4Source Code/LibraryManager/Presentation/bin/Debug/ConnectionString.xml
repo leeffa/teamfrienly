@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConnectionString>Data Source=SERVE\SQLEXPRESS;AttachDbFilename=|DataDirectory|\QLTV_teamfriendly.mdf;Integrated Security=True;User Instance=True;</ConnectionString>

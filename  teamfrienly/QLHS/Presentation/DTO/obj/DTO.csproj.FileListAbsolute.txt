@@ -1,0 +1,5 @@
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DTO\bin\Debug\DTO.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DTO\bin\Debug\DTO.pdb
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DTO\obj\Debug\ResolveAssemblyReference.cache
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DTO\obj\Debug\DTO.dll
+D:\Year 3 of 2008_HKII\CNPM_khang\Exercise\Presentation\DTO\obj\Debug\DTO.pdb

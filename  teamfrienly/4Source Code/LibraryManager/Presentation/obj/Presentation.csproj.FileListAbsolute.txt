@@ -229,3 +229,43 @@ C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\Presentation
 C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
 C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\Presentation\obj\Debug\LibraryManager.exe
 C:\Users\thongoc\Desktop\New Folder (2)\4Source Code\LibraryManager\Presentation\obj\Debug\LibraryManager.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\LibraryManager.exe.config
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\ConnectionString.xml
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\database\CreateDB.sql
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\database\CreateSP.sql
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\database\CreateTable.sql
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\database\insertDB.sql
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\help\Help_ManagerLibrary.chm
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\LibraryManager.exe
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\LibraryManager.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\BUS.dll
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\DAO.dll
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\DTO.dll
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\DAO.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\BUS.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\bin\Debug\DTO.pdb
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.rptTinhHinhMuonSachTheoLoaiSach.rpt
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.rptTinhHinhMuonSachTheoLoaiTheDocGia.rpt
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.rptTinhHinhSachHong.rpt
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.rptTinhHinhSachMat.rpt
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmSach.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmBaoCaoTinhHinhMuonSachTheoLoaiSach.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmBaoCaoTinhHinhSachHong.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmBaoCaoTinhHinhSachMat.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmBaoCaoTinhHinhSachMuonTheoLoaiTheDocGia.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmLoaiThe.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmMatSach.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmMuonSach.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmThe.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmThemNhaXB.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmThemTacGia.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmTraCuuSach.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmTraCuuThe.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.frmLogin.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.MainForm.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.TacGia.resources
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\LibraryManager.exe
+C:\Users\thongoc\Desktop\New Folder\4Source Code\LibraryManager\Presentation\obj\Debug\LibraryManager.pdb
